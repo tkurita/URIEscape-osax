@@ -15,7 +15,7 @@ resource 'aete' (0, "URL Unescape Terminology") {
 	roman,
 	{
 		"URL Unescape Suite",
-		"Unescape percent escape sequences in URL. If the protocoal of the URL is file, return POSIX path in local file system. ",
+		"Unescape percent escape sequences in URL.",
 		'ueUR',
 		1,
 		1,
