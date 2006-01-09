@@ -277,7 +277,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>0</integer>
+									<integer>17</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
@@ -318,7 +318,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Scripting.r</string>
+								<string>URLUnescape.sdef</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -326,11 +326,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Scripting.r</string>
+										<string>URLUnescape.sdef</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>2CA571320972428100F628E4</string>
+										<string>2CA571580972561D00F628E4</string>
 										<key>history</key>
 										<array>
 											<string>2C72FFD70958411D0091C86F</string>
@@ -338,7 +338,8 @@
 											<string>2CA570C609722E1200F628E4</string>
 											<string>2CA570F40972320D00F628E4</string>
 											<string>2CA570F50972320D00F628E4</string>
-											<string>2CA571070972323C00F628E4</string>
+											<string>2CA5714A0972529400F628E4</string>
+											<string>2CA5714B0972529400F628E4</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -348,6 +349,7 @@
 											<string>2C72FFE00958411D0091C86F</string>
 											<string>2C72FFE10958411D0091C86F</string>
 											<string>2CA570FD0972320D00F628E4</string>
+											<string>2CA5714C0972529400F628E4</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -405,9 +407,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>2CA5711B0972325000F628E4</string>
+				<string>2CA5714E0972529400F628E4</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>2CA5711C0972325000F628E4</string>
+				<string>2CA5714F0972529400F628E4</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -542,7 +544,6 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>1C0AD2B3069F1EA900FABCE6</string>
-		<string>2C72FF8F09583DB50091C86F</string>
 		<string>/Users/tkurita/Factories/Cocoa/Projects/URL Unescape/URLUnescape/URLUnescape.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -922,8 +923,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {366, 168}}</string>
-											<string>{{0, 173}, {366, 270}}</string>
+											<string>{{0, 0}, {367, 168}}</string>
+											<string>{{0, 173}, {367, 270}}</string>
 										</array>
 									</dict>
 									<key>VerticalSplitView</key>
@@ -972,9 +973,9 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C0AD2B3069F1EA900FABCE6</string>
-				<string>2CA5711E0972325000F628E4</string>
+				<string>2CA571500972529400F628E4</string>
 				<string>1CD0528B0623707200166675</string>
-				<string>2CA5711F0972325000F628E4</string>
+				<string>2CA571510972529400F628E4</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.run</string>
@@ -983,7 +984,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C0AD2B3069F1EA900FABCE6</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

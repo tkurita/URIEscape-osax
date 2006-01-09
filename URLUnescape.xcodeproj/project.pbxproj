@@ -303,7 +303,7 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/ScriptingAdditions";
+				INSTALL_PATH = /Library/ScriptingAdditions;
 				PRODUCT_NAME = URLUnescape;
 				WRAPPER_EXTENSION = osax;
 			};
