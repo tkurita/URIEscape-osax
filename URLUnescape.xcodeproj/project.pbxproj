@@ -314,7 +314,7 @@
 			buildSettings = {
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INSTALL_PATH = $HOME/Library/ScriptingAdditions;
+				INSTALL_PATH = /Library/ScriptingAdditions;
 				PREBINDING = NO;
 				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
@@ -325,7 +325,7 @@
 			buildSettings = {
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INSTALL_PATH = $HOME/Library/ScriptingAdditions;
+				INSTALL_PATH = /Library/ScriptingAdditions;
 				PREBINDING = NO;
 				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 			};

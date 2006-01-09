@@ -277,8 +277,6 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>7</integer>
-									<integer>3</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -332,7 +330,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>2CA57125097232FE00F628E4</string>
+										<string>2CA5712D09723B0B00F628E4</string>
 										<key>history</key>
 										<array>
 											<string>2C72FFD70958411D0091C86F</string>
@@ -544,8 +542,8 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>1C0AD2B3069F1EA900FABCE6</string>
-		<string>/Users/tkurita/Factories/Cocoa/Projects/URL Unescape/URLUnescape/URLUnescape.xcodeproj</string>
 		<string>2C72FF8F09583DB50091C86F</string>
+		<string>/Users/tkurita/Factories/Cocoa/Projects/URL Unescape/URLUnescape/URLUnescape.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>37 146 1021 708 0 0 1440 938 </string>
