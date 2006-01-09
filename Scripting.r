@@ -15,7 +15,7 @@ resource 'aete' (0, "URL Unescape Terminology") {
 	roman,
 	{
 		"URL Unescape Suite",
-		"Convert file URL to unescaped file path.",
+		"Unescape percent escape sequences in URL. If the protocoal of the URL is file, return POSIX path in local file system. ",
 		'ueUR',
 		1,
 		1,
@@ -23,13 +23,13 @@ resource 'aete' (0, "URL Unescape Terminology") {
 			/* Events */
 
 			"URL Unescape",
-			"convert file URL to file path.",
+			"Unescape percent escape sequences in URL. If the protocoal of the URL is file, return POSIX path in local file system. ",
 			'ueUR', 'ueUR',
 			'TEXT',
-			"Unescaped file path.",
+			"Unescaped URL String or POSIX path.",
 			replyRequired, singleItem, notEnumerated, Reserved13,
 			'TEXT',
-			"file URL",
+			"URL",
 			directParamRequired,
 			singleItem, notEnumerated, Reserved13,
 			{

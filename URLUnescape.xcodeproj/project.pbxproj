@@ -41,7 +41,7 @@
 		2C72FDBF095836400091C86F /* URL Unescape App.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "URL Unescape App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C72FDC1095836400091C86F /* URL Unescape App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "URL Unescape App-Info.plist"; sourceTree = "<group>"; };
 		2C72FEAA095838150091C86F /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
-		2C72FFAF09583F670091C86F /* URLunescape.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.sdef; path = URLunescape.sdef; sourceTree = "<group>"; };
+		2C72FFAF09583F670091C86F /* URLUnescape.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.sdef; path = URLUnescape.sdef; sourceTree = "<group>"; };
 		2C72FFB109583F760091C86F /* Scripting.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; path = Scripting.r; sourceTree = "<group>"; };
 		8D576316048677EA00EA77CD /* URLUnescape.osax */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URLUnescape.osax; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D576317048677EA00EA77CD /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Info.plist; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2C72FFAF09583F670091C86F /* URLunescape.sdef */,
+				2C72FFAF09583F670091C86F /* URLUnescape.sdef */,
 				2C72FDC1095836400091C86F /* URL Unescape App-Info.plist */,
 				8D576317048677EA00EA77CD /* Info.plist */,
 				2C72FFB109583F760091C86F /* Scripting.r */,
