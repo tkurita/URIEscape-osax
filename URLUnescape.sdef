@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
 <dictionary title="URL Unescape Terminology">
-	<suite name="URL Unescape Suite" code="ueUR" description="Unescape percent escape sequences in URL.">
+	<suite name="URL Unescape Suite" code="ueUR" description="Unescape/Adding percent escape sequences in URL. ">
 		<command name="URL Unescape" code="ueURueUR" description="Unescape percent escape sequences in URL. If the protocoal of the URL is file, return POSIX path in local file system. ">
 			<direct-parameter description="URL" type="text"/>
 			<result description="Unescaped URL String or POSIX path." type="text"/>
+		</command>
+		<command name="URL Escape" code="ueUResUR" description="add percent escapes to string">
+			<direct-parameter description="text to add persent escapes" type="text"/>
+			<parameter name="additional characters" code="adCh" description="additional characters to escape" type="text" optional="yes"/>
+			<parameter name="leaving characters" code="lvCh" description="characters to leave unescaped" type="text" optional="yes"/>
+			<result type="text"/>
 		</command>
 	</suite>
 </dictionary>
