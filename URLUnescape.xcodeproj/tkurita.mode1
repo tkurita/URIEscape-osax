@@ -204,10 +204,10 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>2C39FAFD09EDD7F200BFD3D0</string>
+						<string>2C39FB4609EDE28B00BFD3D0</string>
 						<key>history</key>
 						<array>
-							<string>2C39FAC609EDD5B200BFD3D0</string>
+							<string>2C39FB1F09EDD8E800BFD3D0</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -263,6 +263,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -313,8 +315,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>6</integer>
-									<integer>5</integer>
+									<integer>3</integer>
+									<integer>1</integer>
+									<integer>0</integer>
+								</array>
+								<array>
+									<integer>4</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -351,14 +358,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>URIEscape.c</string>
+								<string>URIEscape.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -366,11 +371,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>URIEscape.c</string>
+										<string>URIEscape.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>2C39FAFC09EDD7F200BFD3D0</string>
+										<string>2C39FB4509EDE28B00BFD3D0</string>
 										<key>history</key>
 										<array>
 											<string>2C72FFD70958411D0091C86F</string>
@@ -378,8 +383,8 @@
 											<string>2C39F77F09ED539B00BFD3D0</string>
 											<string>2C39F78009ED539B00BFD3D0</string>
 											<string>2C39F78109ED539B00BFD3D0</string>
-											<string>2C39F85009ED6D7E00BFD3D0</string>
-											<string>2C39FAC309EDD5B200BFD3D0</string>
+											<string>2C39FB1B09EDD8E800BFD3D0</string>
+											<string>2C39FB1E09EDD8E800BFD3D0</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -500,9 +505,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>2C39FAE409EDD76400BFD3D0</string>
+				<string>2C39FB3E09EDE28700BFD3D0</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>2C39FAE509EDD76400BFD3D0</string>
+				<string>2C39FB3F09EDE28700BFD3D0</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
@@ -637,15 +642,9 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>2C39FAF709EDD7E700BFD3D0</string>
-		<string>2C39FAF809EDD7E700BFD3D0</string>
-		<string>2C39F7B809ED633200BFD3D0</string>
-		<string>2C39FAF509EDD7E700BFD3D0</string>
-		<string>2C72FF8F09583DB50091C86F</string>
 		<string>2C39FA3809ED795800BFD3D0</string>
-		<string>/Users/tkurita/Dev/Projects/URLUnescape/trunk/URLUnescape.xcodeproj</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>1C0AD2B3069F1EA900FABCE6</string>
+		<string>/Users/tkurita/Dev/Projects/URLUnescape/trunk/URLUnescape.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>74 151 1022 787 0 0 1440 938 </string>
@@ -686,6 +685,8 @@
 							<string>323pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -847,7 +848,7 @@
 			<key>WindowToolGUID</key>
 			<string>1CD10A99069EF8BA00B06720</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
@@ -1085,9 +1086,9 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C0AD2B3069F1EA900FABCE6</string>
-				<string>2C39FAE709EDD76400BFD3D0</string>
+				<string>2C39FB4109EDE28700BFD3D0</string>
 				<string>1CD0528B0623707200166675</string>
-				<string>2C39FAE809EDD76400BFD3D0</string>
+				<string>2C39FB4209EDE28700BFD3D0</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.run</string>
