@@ -15,6 +15,8 @@
 		2C72FEAB095838150091C86F /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C72FEAA095838150091C86F /* ApplicationServices.framework */; };
 		2C72FEAC095838150091C86F /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C72FEAA095838150091C86F /* ApplicationServices.framework */; };
 		2C72FFB509583FB90091C86F /* Scripting.r in Rez */ = {isa = PBXBuildFile; fileRef = 2C72FFB109583F760091C86F /* Scripting.r */; };
+		2C80078709ED23D900E9B3AC /* URIEscape.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C80078609ED23D900E9B3AC /* URIEscape.c */; };
+		2C80078809ED23D900E9B3AC /* URIEscape.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C80078609ED23D900E9B3AC /* URIEscape.c */; };
 		2CB6DAB709591BA0009A18B4 /* Scripting.r in Rez */ = {isa = PBXBuildFile; fileRef = 2C72FFB109583F760091C86F /* Scripting.r */; };
 		8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
 /* End PBXBuildFile section */
@@ -38,12 +40,14 @@
 		0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
 		2C72FD2D095819360091C86F /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
 		2C72FD30095819440091C86F /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		2C72FDBF095836400091C86F /* URL Unescape App.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "URL Unescape App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C72FDC1095836400091C86F /* URL Unescape App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "URL Unescape App-Info.plist"; sourceTree = "<group>"; };
+		2C72FDBF095836400091C86F /* URI Escape App.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "URI Escape App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C72FDC1095836400091C86F /* URI Escape App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "URI Escape App-Info.plist"; sourceTree = "<group>"; };
 		2C72FEAA095838150091C86F /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
-		2C72FFAF09583F670091C86F /* URLUnescape.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.sdef; path = URLUnescape.sdef; sourceTree = "<group>"; };
+		2C72FFAF09583F670091C86F /* URIEscape.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.sdef; path = URIEscape.sdef; sourceTree = "<group>"; };
 		2C72FFB109583F760091C86F /* Scripting.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; path = Scripting.r; sourceTree = "<group>"; };
-		8D576316048677EA00EA77CD /* URLUnescape.osax */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URLUnescape.osax; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C80078509ED23D900E9B3AC /* URIEscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URIEscape.h; sourceTree = "<group>"; };
+		2C80078609ED23D900E9B3AC /* URIEscape.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = URIEscape.c; sourceTree = "<group>"; };
+		8D576316048677EA00EA77CD /* URI Escape.osax */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "URI Escape.osax"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D576317048677EA00EA77CD /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,8 +99,8 @@
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2C72FFAF09583F670091C86F /* URLUnescape.sdef */,
-				2C72FDC1095836400091C86F /* URL Unescape App-Info.plist */,
+				2C72FFAF09583F670091C86F /* URIEscape.sdef */,
+				2C72FDC1095836400091C86F /* URI Escape App-Info.plist */,
 				8D576317048677EA00EA77CD /* Info.plist */,
 				2C72FFB109583F760091C86F /* Scripting.r */,
 			);
@@ -107,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				2C72FD30095819440091C86F /* main.c */,
+				2C80078509ED23D900E9B3AC /* URIEscape.h */,
+				2C80078609ED23D900E9B3AC /* URIEscape.c */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -114,8 +120,8 @@
 		19C28FB6FE9D52B211CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D576316048677EA00EA77CD /* URLUnescape.osax */,
-				2C72FDBF095836400091C86F /* URL Unescape App.app */,
+				8D576316048677EA00EA77CD /* URI Escape.osax */,
+				2C72FDBF095836400091C86F /* URI Escape App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,9 +129,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2C72FDBE095836400091C86F /* URL Unescape App */ = {
+		2C72FDBE095836400091C86F /* URI Escape App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C72FDC2095836410091C86F /* Build configuration list for PBXNativeTarget "URL Unescape App" */;
+			buildConfigurationList = 2C72FDC2095836410091C86F /* Build configuration list for PBXNativeTarget "URI Escape App" */;
 			buildPhases = (
 				2C72FDBB095836400091C86F /* Resources */,
 				2C72FDBC095836400091C86F /* Sources */,
@@ -152,9 +158,9 @@
 			};
 			dependencies = (
 			);
-			name = "URL Unescape App";
+			name = "URI Escape App";
 			productName = "URL Unescape App";
-			productReference = 2C72FDBF095836400091C86F /* URL Unescape App.app */;
+			productReference = 2C72FDBF095836400091C86F /* URI Escape App.app */;
 			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
 <!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
 <plist version=\"1.0\">
@@ -178,9 +184,9 @@
 ";
 			productType = "com.apple.product-type.application";
 		};
-		8D57630D048677EA00EA77CD /* URLUnescape */ = {
+		8D57630D048677EA00EA77CD /* URI Escape */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DEB911A08733D790010E9CD /* Build configuration list for PBXNativeTarget "URLUnescape" */;
+			buildConfigurationList = 1DEB911A08733D790010E9CD /* Build configuration list for PBXNativeTarget "URI Escape" */;
 			buildPhases = (
 				8D57630F048677EA00EA77CD /* Resources */,
 				8D576311048677EA00EA77CD /* Sources */,
@@ -193,10 +199,10 @@
 			};
 			dependencies = (
 			);
-			name = URLUnescape;
+			name = "URI Escape";
 			productInstallPath = "$(HOME)/Library/Bundles";
 			productName = UnEscapeURL;
-			productReference = 8D576316048677EA00EA77CD /* URLUnescape.osax */;
+			productReference = 8D576316048677EA00EA77CD /* URI Escape.osax */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -215,8 +221,8 @@
 			mainGroup = 089C166AFE841209C02AAC07 /* UnEscapeURL */;
 			projectDirPath = "";
 			targets = (
-				8D57630D048677EA00EA77CD /* URLUnescape */,
-				2C72FDBE095836400091C86F /* URL Unescape App */,
+				8D57630D048677EA00EA77CD /* URI Escape */,
+				2C72FDBE095836400091C86F /* URI Escape App */,
 			);
 		};
 /* End PBXProject section */
@@ -263,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C72FE850958366C0091C86F /* main.c in Sources */,
+				2C80078809ED23D900E9B3AC /* URIEscape.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C72FD31095819440091C86F /* main.c in Sources */,
+				2C80078709ED23D900E9B3AC /* URIEscape.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +295,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/ScriptingAdditions";
-				PRODUCT_NAME = URLUnescape;
+				PRODUCT_NAME = "URI Escape";
 				WRAPPER_EXTENSION = osax;
 				ZERO_LINK = YES;
 			};
@@ -304,7 +312,7 @@
 				GCC_MODEL_TUNING = G5;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = /Library/ScriptingAdditions;
-				PRODUCT_NAME = URLUnescape;
+				PRODUCT_NAME = "URI Escape";
 				WRAPPER_EXTENSION = osax;
 			};
 			name = Release;
@@ -342,14 +350,14 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
-				INFOPLIST_FILE = "URL Unescape App-Info.plist";
+				INFOPLIST_FILE = "URI Escape App-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Carbon,
 				);
 				PREBINDING = NO;
-				PRODUCT_NAME = "URL Unescape App";
+				PRODUCT_NAME = "URI Escape App";
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = YES;
 			};
@@ -364,14 +372,14 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
-				INFOPLIST_FILE = "URL Unescape App-Info.plist";
+				INFOPLIST_FILE = "URI Escape App-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Carbon,
 				);
 				PREBINDING = NO;
-				PRODUCT_NAME = "URL Unescape App";
+				PRODUCT_NAME = "URI Escape App";
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
@@ -380,7 +388,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DEB911A08733D790010E9CD /* Build configuration list for PBXNativeTarget "URLUnescape" */ = {
+		1DEB911A08733D790010E9CD /* Build configuration list for PBXNativeTarget "URI Escape" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB911B08733D790010E9CD /* Debug */,
@@ -398,7 +406,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C72FDC2095836410091C86F /* Build configuration list for PBXNativeTarget "URL Unescape App" */ = {
+		2C72FDC2095836410091C86F /* Build configuration list for PBXNativeTarget "URI Escape App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C72FDC3095836410091C86F /* Debug */,

@@ -8,21 +8,21 @@
 #define synonym_verb__ reply_none__, dp_none__, { }
 #define plural__    "", {"", kAESpecialClassProperties, cType, "", reserved, singleItem, notEnumerated, readOnly, Reserved8, noApostrophe, notFeminine, notMasculine, plural}, {}
 
-resource 'aete' (0, "URL Unescape Terminology") {
+resource 'aete' (0, "URI Escape Terminology") {
 	0x1,  // major version
 	0x0,  // minor version
 	english,
 	roman,
 	{
-		"URL Unescape Suite",
-		"Unescape percent escape sequences in URL.",
+		"URI Escape Suite",
+		"Unescape/Adding percent escape sequences in URL. ",
 		'ueUR',
 		1,
 		1,
 		{
 			/* Events */
 
-			"URL Unescape",
+			"URI Unescape",
 			"Unescape percent escape sequences in URL. If the protocoal of the URL is file, return POSIX path in local file system. ",
 			'ueUR', 'ueUR',
 			'TEXT',
@@ -34,6 +34,27 @@ resource 'aete' (0, "URL Unescape Terminology") {
 			singleItem, notEnumerated, Reserved13,
 			{
 
+			},
+
+			"URI Escape",
+			"add percent escapes to string",
+			'ueUR', 'esUR',
+			'TEXT',
+			"",
+			replyRequired, singleItem, notEnumerated, Reserved13,
+			'TEXT',
+			"text to add persent escapes",
+			directParamRequired,
+			singleItem, notEnumerated, Reserved13,
+			{
+				"additional characters", 'adCh', 'TEXT',
+				"additional characters to escape",
+				optional,
+				singleItem, notEnumerated, Reserved13,
+				"leaving characters", 'lvCh', 'TEXT',
+				"characters to leave unescaped",
+				optional,
+				singleItem, notEnumerated, Reserved13
 			}
 		},
 		{
