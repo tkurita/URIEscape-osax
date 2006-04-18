@@ -47,11 +47,11 @@ resource 'aete' (0, "URI Escape Terminology") {
 			directParamRequired,
 			singleItem, notEnumerated, Reserved13,
 			{
-				"additional characters", 'adCh', 'TEXT',
+				"additional", 'adCh', 'TEXT',
 				"additional characters to escape",
 				optional,
 				singleItem, notEnumerated, Reserved13,
-				"leaving characters", 'lvCh', 'TEXT',
+				"leaving", 'lvCh', 'TEXT',
 				"characters to leave unescaped",
 				optional,
 				singleItem, notEnumerated, Reserved13
