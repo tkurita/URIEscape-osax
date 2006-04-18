@@ -27,6 +27,9 @@ void safeRelease(CFTypeRef theObj)
 
 OSErr getStringValue(const AppleEvent *ev, AEKeyword theKey, CFStringRef *outStr)
 {
+#if useLog
+	printf("start getStringValue\n");
+#endif
 	OSErr err;
 	DescType typeCode;
 	DescType returnedType;
@@ -52,9 +55,15 @@ OSErr getStringValue(const AppleEvent *ev, AEKeyword theKey, CFStringRef *outStr
 	UInt8 *dataPtr = malloc(dataSize);
 	err = AEGetParamPtr (ev, theKey, typeCode, &returnedType, dataPtr, dataSize, &actualSize);
 	if (actualSize > dataSize) {
+#if useLog
 		printf("buffere size is allocated. data:%i actual:%i\n", dataSize, actualSize);
+#endif	
 		dataSize = actualSize;
-		realloc(dataPtr, dataSize);
+		dataPtr = (UInt8 *)realloc(dataPtr, dataSize);
+		if (dataPtr == NULL) {
+			printf("fail to reallocate memory\n");
+			goto bail;
+		}
 		err = AEGetParamPtr (ev, theKey, typeCode, &returnedType, dataPtr, dataSize, &actualSize);
 	}
 	
@@ -66,13 +75,17 @@ OSErr getStringValue(const AppleEvent *ev, AEKeyword theKey, CFStringRef *outStr
 	*outStr = CFStringCreateWithBytes(NULL, dataPtr, dataSize, encodeKey, false);
 	free(dataPtr);
 bail:
-		
-		return err;
+#if useLog		
+	printf("end getStringValue\n");
+#endif
+	return err;
 }
 
 OSErr putStringToReply(CFStringRef inStr, CFStringEncoding kEncoding, AppleEvent *reply)
 {
-	
+#if useLog
+	printf("start putStringToReply\n");
+#endif
 	OSErr err;
 	DescType resultType;
 	
@@ -109,12 +122,14 @@ OSErr putStringToReply(CFStringRef inStr, CFStringEncoding kEncoding, AppleEvent
 	}
 	
 bail:
-		return err;
+#if useLog
+	printf("end putStringToReply\n");
+#endif
+	return err;
 }
 
 OSErr putFilePathToReply(CFURLRef inURL, AppleEvent *reply)
-{
-	
+{	
 	OSErr err;
 	char buffer[bufferSize];
 	CFURLGetFileSystemRepresentation(inURL, true, (UInt8 *)buffer, bufferSize);
@@ -210,5 +225,8 @@ bail:
 	--gAdditionReferenceCount;  // don't forget to decrement the reference count when you leave!
 	safeRelease(originalStr);
 	safeRelease(escapedStr);
+	safeRelease(additionalChar);
+	safeRelease(leavingChar);
+
 	return err;
 }
