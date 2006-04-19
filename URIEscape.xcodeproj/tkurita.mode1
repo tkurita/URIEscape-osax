@@ -274,8 +274,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>4</integer>
-									<integer>1</integer>
+									<integer>6</integer>
+									<integer>5</integer>
+									<integer>0</integer>
+								</array>
+								<array>
+									<integer>9</integer>
+									<integer>5</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -351,7 +356,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>URIEscape.c</string>
+								<string>URIEscape.sdef</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -359,19 +364,22 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>URIEscape.c</string>
+										<string>URIEscape.sdef</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>2CE284C109F4B79F00CE6349</string>
+										<string>2CB711E009F50D6300B18AD3</string>
 										<key>history</key>
 										<array>
-											<string>2CE2849D09F4B77800CE6349</string>
-											<string>2CE284A009F4B77800CE6349</string>
+											<string>2CB711D709F4F97200B18AD3</string>
+											<string>2CB711D809F4F97200B18AD3</string>
+											<string>2CB711D909F4F97200B18AD3</string>
 										</array>
 										<key>prevStack</key>
 										<array>
 											<string>2CE2849F09F4B77800CE6349</string>
+											<string>2CB711DA09F4F97200B18AD3</string>
+											<string>2CB711DB09F4F97200B18AD3</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -430,9 +438,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>2CE284C209F4B79F00CE6349</string>
+				<string>2CB711DD09F4F97200B18AD3</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>2CE284C309F4B79F00CE6349</string>
+				<string>2CB711DE09F4F97200B18AD3</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
@@ -567,6 +575,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>2C72FF8F09583DB50091C86F</string>
 		<string>/Users/tkurita/Dev/Projects/URI Escape/trunk/URIEscape.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -647,7 +656,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>2C72FF8F09583DB50091C86F</string>
-				<string>2CE284A309F4B77800CE6349</string>
+				<string>2CB711DF09F4F97200B18AD3</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
