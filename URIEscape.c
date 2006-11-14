@@ -174,7 +174,10 @@ OSErr unPersentEscape(const AppleEvent *ev, AppleEvent *reply, long refcon)
 	CFComparisonResult isLocalFile = kCFCompareLessThan;
 	if (isFileScheme == kCFCompareEqualTo) {
 		CFStringRef theHost = CFURLCopyHostName(theURL);
-		isLocalFile = CFStringCompare(theHost, CFSTR("localhost"), 0);
+		isLocalFile = kCFCompareEqualTo;
+		if (theHost != NULL) {
+			isLocalFile = CFStringCompare(theHost, CFSTR("localhost"), 0);
+		}
 	}
 	
 	if (isLocalFile == kCFCompareEqualTo) {
