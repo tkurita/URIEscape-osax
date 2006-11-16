@@ -21,21 +21,6 @@
 		8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXBuildStyle section */
-		014CEA3F0018CDD111CA2923 /* Debug */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		014CEA400018CDD111CA2923 /* Release */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-			};
-			name = Release;
-		};
-/* End PBXBuildStyle section */
-
 /* Begin PBXFileReference section */
 		0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
 		2C72FD2D095819360091C86F /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
@@ -140,48 +125,11 @@
 			);
 			buildRules = (
 			);
-			buildSettings = {
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
-				INFOPLIST_FILE = "URL Unescape App-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Carbon,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = "URL Unescape App";
-				WRAPPER_EXTENSION = app;
-				ZERO_LINK = YES;
-			};
 			dependencies = (
 			);
 			name = "URI Escape App";
 			productName = "URL Unescape App";
 			productReference = 2C72FDBF095836400091C86F /* URI Escape App.app */;
-			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
-<plist version=\"1.0\">
-<dict>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>English</string>
-	<key>CFBundleExecutable</key>
-	<string>${EXECUTABLE_NAME}</string>
-	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.URL Unescape App</string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
-	<key>CFBundlePackageType</key>
-	<string>APPL</string>
-	<key>CFBundleSignature</key>
-	<string>????</string>
-	<key>CFBundleVersion</key>
-	<string>1.0</string>
-</dict>
-</plist>
-";
 			productType = "com.apple.product-type.application";
 		};
 		8D57630D048677EA00EA77CD /* URI Escape */ = {
@@ -195,8 +143,6 @@
 			);
 			buildRules = (
 			);
-			buildSettings = {
-			};
 			dependencies = (
 			);
 			name = "URI Escape";
@@ -211,12 +157,6 @@
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 1DEB911E08733D790010E9CD /* Build configuration list for PBXProject "URIEscape" */;
-			buildSettings = {
-			};
-			buildStyles = (
-				014CEA3F0018CDD111CA2923 /* Debug */,
-				014CEA400018CDD111CA2923 /* Release */,
-			);
 			hasScannedForEncodings = 1;
 			mainGroup = 089C166AFE841209C02AAC07 /* UnEscapeURL */;
 			projectDirPath = "";
@@ -331,6 +271,10 @@
 		1DEB912008733D790010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_PATH = /Library/ScriptingAdditions;
