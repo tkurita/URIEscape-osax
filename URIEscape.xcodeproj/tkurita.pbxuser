@@ -2,11 +2,11 @@
 {
 	089C1669FE841209C02AAC07 /* Project object */ = {
 		activeBuildConfigurationName = Release;
-		activeExecutable = 2C0E52B40B0C017C00A32FAC /* URI Escape App */;
+		activeExecutable = 2C5A00360B6100B600A118C3 /* URI Escape App */;
 		activeTarget = 8D57630D048677EA00EA77CD /* URI Escape */;
-		codeSenseManager = 2C0E52C60B0C018400A32FAC /* Code sense */;
+		codeSenseManager = 2C5A004D0B6100D000A118C3 /* Code sense */;
 		executables = (
-			2C0E52B40B0C017C00A32FAC /* URI Escape App */,
+			2C5A00360B6100B600A118C3 /* URI Escape App */,
 		);
 		perUserDictionary = {
 			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
@@ -14,7 +14,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					466,
+					545,
 					20,
 					48.1626,
 					43,
@@ -31,14 +31,14 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 185336188;
-			PBXWorkspaceStateSaveDate = 185336188;
+			PBXPerProjectTemplateStateSaveDate = 190906551;
+			PBXWorkspaceStateSaveDate = 190906551;
 		};
-		sourceControlManager = 2C0E52C50B0C018400A32FAC /* Source Control */;
+		sourceControlManager = 2C5A004C0B6100D000A118C3 /* Source Control */;
 		userBuildSettings = {
 		};
 	};
-	2C0E52B40B0C017C00A32FAC /* URI Escape App */ = {
+	2C5A00360B6100B600A118C3 /* URI Escape App */ = {
 		isa = PBXExecutable;
 		activeArgIndex = 2147483647;
 		activeArgIndices = (
@@ -61,7 +61,7 @@
 		sourceDirectories = (
 		);
 	};
-	2C0E52C50B0C018400A32FAC /* Source Control */ = {
+	2C5A004C0B6100D000A118C3 /* Source Control */ = {
 		isa = PBXSourceControlManager;
 		fallbackIsa = XCSourceControlManager;
 		isSCMEnabled = 0;
@@ -69,14 +69,14 @@
 		};
 		scmType = "";
 	};
-	2C0E52C60B0C018400A32FAC /* Code sense */ = {
+	2C5A004D0B6100D000A118C3 /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
 	2C72FDBE095836400091C86F /* URI Escape App */ = {
 		activeExec = 0;
 		executables = (
-			2C0E52B40B0C017C00A32FAC /* URI Escape App */,
+			2C5A00360B6100B600A118C3 /* URI Escape App */,
 		);
 	};
 	8D57630D048677EA00EA77CD /* URI Escape */ = {
