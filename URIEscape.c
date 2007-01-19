@@ -164,9 +164,13 @@ OSErr unPersentEscape(const AppleEvent *ev, AppleEvent *reply, long refcon)
 	CFStringRef urlStr = NULL;
 	err = getStringValue(ev, keyDirectObject, &urlStr);
 	if (urlStr == NULL) goto bail;
-		
+	if (CFStringGetLength(urlStr) == 0) {
+		err = putStringToReply(urlStr, kCFStringEncodingUTF8, reply);
+		goto bail;
+	}
+
 	CFURLRef theURL = CFURLCreateWithString(NULL, urlStr, NULL);
-	
+
 	CFComparisonResult isFileScheme = kCFCompareLessThan;
 	CFStringRef theScheme = CFURLCopyScheme(theURL);
 	if (theScheme != NULL) {
