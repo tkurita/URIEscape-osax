@@ -38,7 +38,10 @@ OSErr getStringValue(const AppleEvent *ev, AEKeyword theKey, CFStringRef *outStr
 	CFStringEncoding encodeKey;
 	
 	err = AESizeOfParam(ev, theKey, &typeCode, &dataSize);
-	if (dataSize == 0) goto bail;
+	if (dataSize == 0) {
+		*outStr = CFSTR("");
+		goto bail;
+	}
 	
 	switch (typeCode) {
 		case typeChar:
@@ -209,20 +212,25 @@ OSErr persentEscape(const AppleEvent *ev, AppleEvent *reply, long refcon)
 #endif
 	
 	CFStringRef originalStr = NULL;
+	CFStringRef additionalChar = NULL;
+	CFStringRef leavingChar = NULL;
+	CFStringRef escapedStr = NULL;
+	
 	err = getStringValue(ev, keyDirectObject, &originalStr);
 	if (originalStr == NULL) goto bail;
-	
-	CFStringRef additionalChar = NULL;
-	err = getStringValue(ev, kAdditionalCharParam, &additionalChar);
-	if (originalStr == NULL) goto bail;
-
-	CFStringRef leavingChar = NULL;
-	err = getStringValue(ev, kLeavingCharParam, &leavingChar);
-	
-	CFStringRef escapedStr = NULL;
-	escapedStr = CFURLCreateStringByAddingPercentEscapes(NULL, originalStr, leavingChar, additionalChar, kCFStringEncodingUTF8);
-	
+	if (CFStringGetLength(originalStr) == 0) {
+		escapedStr = originalStr;
+	}
+	else {	
+		err = getStringValue(ev, kAdditionalCharParam, &additionalChar);
+		if (err != noErr) printf("fail to additional char with error :%d",err);
+		err = getStringValue(ev, kLeavingCharParam, &leavingChar);
+		if (err != noErr) printf("fail to leaving char with error :%d",err);
+		escapedStr = CFURLCreateStringByAddingPercentEscapes(
+			NULL, originalStr, leavingChar, additionalChar, kCFStringEncodingUTF8);
+	}
 	err = putStringToReply(escapedStr, kCFStringEncodingUTF8, reply);
+	if (err != noErr) printf("fail to setup reply with error :%d",err);
 bail:	
 
 	--gAdditionReferenceCount;  // don't forget to decrement the reference count when you leave!
