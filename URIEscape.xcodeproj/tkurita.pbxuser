@@ -1,9 +1,10 @@
 // !$*UTF8*$!
 {
 	089C1669FE841209C02AAC07 /* Project object */ = {
-		activeBuildConfigurationName = Release;
+		activeBuildConfigurationName = Debug;
 		activeExecutable = 2C5A00360B6100B600A118C3 /* URI Escape App */;
-		activeTarget = 8D57630D048677EA00EA77CD /* URI Escape */;
+		activeTarget = 2C72FDBE095836400091C86F /* URI Escape App */;
+		breakpointsGroup = 2C5A00560B61023D00A118C3 /* XCBreakpointsBucket */;
 		codeSenseManager = 2C5A004D0B6100D000A118C3 /* Code sense */;
 		executables = (
 			2C5A00360B6100B600A118C3 /* URI Escape App */,
@@ -14,9 +15,9 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					545,
+					359,
 					20,
-					48.1626,
+					48,
 					43,
 					43,
 					20,
@@ -31,8 +32,8 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 190906551;
-			PBXWorkspaceStateSaveDate = 190906551;
+			PBXPerProjectTemplateStateSaveDate = 190945409;
+			PBXWorkspaceStateSaveDate = 190945409;
 		};
 		sourceControlManager = 2C5A004C0B6100D000A118C3 /* Source Control */;
 		userBuildSettings = {
@@ -51,6 +52,7 @@
 		customDataFormattersEnabled = 1;
 		debuggerPlugin = GDBDebugging;
 		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
 		enableDebugStr = 1;
 		environmentEntries = (
 		);
@@ -58,6 +60,8 @@
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
 		name = "URI Escape App";
+		savedGlobals = {
+		};
 		sourceDirectories = (
 		);
 	};
@@ -73,6 +77,12 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
+	2C5A00560B61023D00A118C3 /* XCBreakpointsBucket */ = {
+		isa = XCBreakpointsBucket;
+		name = "プロジェクトブレークポイント";
+		objects = (
+		);
+	};
 	2C72FDBE095836400091C86F /* URI Escape App */ = {
 		activeExec = 0;
 		executables = (
@@ -81,5 +91,13 @@
 	};
 	8D57630D048677EA00EA77CD /* URI Escape */ = {
 		activeExec = 0;
+	};
+	8D576317048677EA00EA77CD /* Info.plist */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {797, 690}}";
+			sepNavSelRange = "{381, 0}";
+			sepNavVisRect = "{{0, 0}, {776, 690}}";
+			sepNavWindowFrame = "{{15, 114}, {815, 819}}";
+		};
 	};
 }
