@@ -1,9 +1,9 @@
 // !$*UTF8*$!
 {
 	089C1669FE841209C02AAC07 /* Project object */ = {
-		activeBuildConfigurationName = Debug;
+		activeBuildConfigurationName = Release;
 		activeExecutable = 2C5A00360B6100B600A118C3 /* URI Escape App */;
-		activeTarget = 2C72FDBE095836400091C86F /* URI Escape App */;
+		activeTarget = 8D57630D048677EA00EA77CD /* URI Escape */;
 		breakpointsGroup = 2C5A00560B61023D00A118C3 /* XCBreakpointsBucket */;
 		codeSenseManager = 2C5A004D0B6100D000A118C3 /* Code sense */;
 		executables = (
@@ -88,6 +88,11 @@
 		executables = (
 			2C5A00360B6100B600A118C3 /* URI Escape App */,
 		);
+	};
+	2C72FFAF09583F670091C86F /* URIEscape.sdef */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{380, 88}, {815, 819}}";
+		};
 	};
 	8D57630D048677EA00EA77CD /* URI Escape */ = {
 		activeExec = 0;

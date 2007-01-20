@@ -289,7 +289,7 @@
 							<real>261</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>63 350 881 536 0 0 1440 938 </string>
+						<string>62 351 881 536 0 0 1440 938 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -326,7 +326,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {598, 0}}</string>
 								<key>RubberWindowFrame</key>
-								<string>63 350 881 536 0 0 1440 938 </string>
+								<string>62 351 881 536 0 0 1440 938 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -348,7 +348,7 @@
 								<key>Frame</key>
 								<string>{{0, 5}, {598, 490}}</string>
 								<key>RubberWindowFrame</key>
-								<string>63 350 881 536 0 0 1440 938 </string>
+								<string>62 351 881 536 0 0 1440 938 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -512,12 +512,12 @@
 		<string>2C5A00EC0B61989000A118C3</string>
 		<string>2C5A00E90B61989000A118C3</string>
 		<string>2C5A00E80B61989000A118C3</string>
-		<string>/Users/tkurita/Dev/Projects/URI Escape/trunk/URIEscape.xcodeproj</string>
 		<string>2C5A00470B6100CB00A118C3</string>
 		<string>1CD10A99069EF8BA00B06720</string>
+		<string>/Users/tkurita/Dev/Projects/URI Escape/trunk/URIEscape.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>63 350 881 536 0 0 1440 938 </string>
+	<string>62 351 881 536 0 0 1440 938 </string>
 	<key>WindowTools</key>
 	<array>
 		<dict>
@@ -607,7 +607,7 @@
 			<key>WindowToolGUID</key>
 			<string>2C5A00470B6100CB00A118C3</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
@@ -679,7 +679,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {694, 381}}</string>
 								<key>RubberWindowFrame</key>
-								<string>105 418 694 422 0 0 1440 938 </string>
+								<string>482 395 694 422 0 0 1440 938 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugSessionModule</string>
@@ -714,7 +714,7 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debug</string>
 			<key>WindowString</key>
-			<string>105 418 694 422 0 0 1440 938 </string>
+			<string>482 395 694 422 0 0 1440 938 </string>
 			<key>WindowToolGUID</key>
 			<string>1CD10A99069EF8BA00B06720</string>
 			<key>WindowToolIsVisible</key>
