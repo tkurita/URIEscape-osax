@@ -18,6 +18,8 @@
 		2C80078709ED23D900E9B3AC /* URIEscape.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C80078609ED23D900E9B3AC /* URIEscape.c */; };
 		2C80078809ED23D900E9B3AC /* URIEscape.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C80078609ED23D900E9B3AC /* URIEscape.c */; };
 		2CB6DAB709591BA0009A18B4 /* Scripting.r in Rez */ = {isa = PBXBuildFile; fileRef = 2C72FFB109583F760091C86F /* Scripting.r */; };
+		2CD2B1C70B96CA9A00DD307C /* AEUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2B1C50B96CA9A00DD307C /* AEUtils.c */; };
+		2CD2B1C80B96CA9A00DD307C /* AEUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2B1C50B96CA9A00DD307C /* AEUtils.c */; };
 		8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,8 @@
 		2C72FFB109583F760091C86F /* Scripting.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; path = Scripting.r; sourceTree = "<group>"; };
 		2C80078509ED23D900E9B3AC /* URIEscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URIEscape.h; sourceTree = "<group>"; };
 		2C80078609ED23D900E9B3AC /* URIEscape.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = URIEscape.c; sourceTree = "<group>"; };
+		2CD2B1C50B96CA9A00DD307C /* AEUtils.c */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.c; path = AEUtils.c; sourceTree = "<group>"; };
+		2CD2B1C60B96CA9A00DD307C /* AEUtils.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = AEUtils.h; sourceTree = "<group>"; };
 		8D576316048677EA00EA77CD /* URI Escape.osax */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "URI Escape.osax"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D576317048677EA00EA77CD /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +67,7 @@
 		089C166AFE841209C02AAC07 /* UnEscapeURL */ = {
 			isa = PBXGroup;
 			children = (
+				2CD2B1C40B96CA9A00DD307C /* AEUtils */,
 				08FB77AFFE84173DC02AAC07 /* Source */,
 				089C167CFE841241C02AAC07 /* Resources */,
 				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
@@ -109,6 +114,15 @@
 				2C72FDBF095836400091C86F /* URI Escape App.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		2CD2B1C40B96CA9A00DD307C /* AEUtils */ = {
+			isa = PBXGroup;
+			children = (
+				2CD2B1C50B96CA9A00DD307C /* AEUtils.c */,
+				2CD2B1C60B96CA9A00DD307C /* AEUtils.h */,
+			);
+			path = AEUtils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +224,7 @@
 			files = (
 				2C72FE850958366C0091C86F /* main.c in Sources */,
 				2C80078809ED23D900E9B3AC /* URIEscape.c in Sources */,
+				2CD2B1C80B96CA9A00DD307C /* AEUtils.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +234,7 @@
 			files = (
 				2C72FD31095819440091C86F /* main.c in Sources */,
 				2C80078709ED23D900E9B3AC /* URIEscape.c in Sources */,
+				2CD2B1C70B96CA9A00DD307C /* AEUtils.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
