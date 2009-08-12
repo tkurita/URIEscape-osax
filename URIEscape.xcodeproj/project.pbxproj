@@ -18,24 +18,40 @@
 		2C80078709ED23D900E9B3AC /* URIEscape.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C80078609ED23D900E9B3AC /* URIEscape.c */; };
 		2C80078809ED23D900E9B3AC /* URIEscape.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C80078609ED23D900E9B3AC /* URIEscape.c */; };
 		2CB6DAB709591BA0009A18B4 /* Scripting.r in Rez */ = {isa = PBXBuildFile; fileRef = 2C72FFB109583F760091C86F /* Scripting.r */; };
+		2CC754DD0B9EDD9500D009A7 /* URIEscape.sdef in Sources */ = {isa = PBXBuildFile; fileRef = 2C72FFAF09583F670091C86F /* URIEscape.sdef */; };
 		2CD2B1C70B96CA9A00DD307C /* AEUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2B1C50B96CA9A00DD307C /* AEUtils.c */; };
 		2CD2B1C80B96CA9A00DD307C /* AEUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2B1C50B96CA9A00DD307C /* AEUtils.c */; };
 		8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		2CC754E70B9EDDAF00D009A7 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.sdef";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"${INPUT_FILE_BASE}.r",
+			);
+			script = "/usr/bin/sdp -f a -o ${INPUT_FILE_BASE}.r $INPUT_FILE_PATH";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
 		0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
 		2C72FD2D095819360091C86F /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
 		2C72FD30095819440091C86F /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		2C72FDBF095836400091C86F /* URI Escape App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "URI Escape App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C72FDC1095836400091C86F /* URI Escape App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "URI Escape App-Info.plist"; sourceTree = "<group>"; };
+		2C72FDC1095836400091C86F /* URI Escape App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "URI Escape App-Info.plist"; sourceTree = "<group>"; };
 		2C72FEAA095838150091C86F /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
 		2C72FFAF09583F670091C86F /* URIEscape.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.sdef; path = URIEscape.sdef; sourceTree = "<group>"; };
 		2C72FFB109583F760091C86F /* Scripting.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; path = Scripting.r; sourceTree = "<group>"; };
 		2C80078509ED23D900E9B3AC /* URIEscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URIEscape.h; sourceTree = "<group>"; };
 		2C80078609ED23D900E9B3AC /* URIEscape.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = URIEscape.c; sourceTree = "<group>"; };
-		2CD2B1C50B96CA9A00DD307C /* AEUtils.c */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.c; path = AEUtils.c; sourceTree = "<group>"; };
-		2CD2B1C60B96CA9A00DD307C /* AEUtils.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = AEUtils.h; sourceTree = "<group>"; };
+		2CD2B1C50B96CA9A00DD307C /* AEUtils.c */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.c; path = AEUtils.c; sourceTree = "<group>"; };
+		2CD2B1C60B96CA9A00DD307C /* AEUtils.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = AEUtils.h; sourceTree = "<group>"; };
+		2CE132DC1032C33C00578ACF /* History.rd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = History.rd; path = ../History.rd; sourceTree = SOURCE_ROOT; };
 		8D576316048677EA00EA77CD /* URI Escape.osax */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "URI Escape.osax"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D576317048677EA00EA77CD /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +83,7 @@
 		089C166AFE841209C02AAC07 /* UnEscapeURL */ = {
 			isa = PBXGroup;
 			children = (
+				2CE132DC1032C33C00578ACF /* History.rd */,
 				2CD2B1C40B96CA9A00DD307C /* AEUtils */,
 				08FB77AFFE84173DC02AAC07 /* Source */,
 				089C167CFE841241C02AAC07 /* Resources */,
@@ -156,6 +173,7 @@
 				2CB6DAA209591B9A009A18B4 /* Rez */,
 			);
 			buildRules = (
+				2CC754E70B9EDDAF00D009A7 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -171,9 +189,11 @@
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 1DEB911E08733D790010E9CD /* Build configuration list for PBXProject "URIEscape" */;
+			compatibilityVersion = "Xcode 2.4";
 			hasScannedForEncodings = 1;
 			mainGroup = 089C166AFE841209C02AAC07 /* UnEscapeURL */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 				8D57630D048677EA00EA77CD /* URI Escape */,
 				2C72FDBE095836400091C86F /* URI Escape App */,
@@ -232,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC754DD0B9EDD9500D009A7 /* URIEscape.sdef in Sources */,
 				2C72FD31095819440091C86F /* main.c in Sources */,
 				2C80078709ED23D900E9B3AC /* URIEscape.c in Sources */,
 				2CD2B1C70B96CA9A00DD307C /* AEUtils.c in Sources */,

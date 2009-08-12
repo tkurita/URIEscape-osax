@@ -72,7 +72,8 @@ OSErr persentEscape(const AppleEvent *ev, AppleEvent *reply, long refcon)
 	CFStringRef additionalChar = NULL;
 	CFStringRef leavingChar = NULL;
 	CFStringRef escapedStr = NULL;
-	
+	CFStringRef encodingName = NULL;
+	CFStringEncoding encodingID = kCFStringEncodingUTF8;
 	err = getStringValue(ev, keyDirectObject, &originalStr);
 	if (originalStr == NULL) goto bail;
 	if (CFStringGetLength(originalStr) == 0) {
@@ -80,14 +81,21 @@ OSErr persentEscape(const AppleEvent *ev, AppleEvent *reply, long refcon)
 	}
 	else {	
 		err = getStringValue(ev, kAdditionalCharParam, &additionalChar);
-		//if (err != noErr) printf("fail to get additional char with error :%d",err);
+		if (err != noErr) fprintf(stderr, "fail to get additional char with error :%d\n",err);
 		err = getStringValue(ev, kLeavingCharParam, &leavingChar);
-		//if (err != noErr) printf("fail to get leaving char with error :%d",err);
+		if (err != noErr) fprintf(stderr, "fail to get leaving char with error :%d\n",err);
+		err = getStringValue(ev, kEncodingParam, &encodingName)
+		if (CFStringGetLength(encodingName)) {
+			encodingID = CFStringConvertIANACharSetNameToEncoding(encodingName);
+			if (kCFStringEncodingInvalidId == encodingID) {
+				fprintf(stderr, "encoding name is invalid\n",);
+			}
+		}
 		escapedStr = CFURLCreateStringByAddingPercentEscapes(
-			NULL, originalStr, leavingChar, additionalChar, kCFStringEncodingUTF8);
+			NULL, originalStr, leavingChar, additionalChar, encodingID);
 	}
 	err = putStringToReply(escapedStr, kCFStringEncodingUTF8, reply);
-	if (err != noErr) printf("fail to setup reply with error :%d",err);
+	if (err != noErr) fprintf(stderr, "fail to setup reply with error :%d\n",err);
 bail:	
 
 	--gAdditionReferenceCount;  // don't forget to decrement the reference count when you leave!
