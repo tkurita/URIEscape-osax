@@ -33,7 +33,10 @@ resource 'aete' (0, "URI Escape Terminology") {
 			directParamRequired,
 			singleItem, notEnumerated, Reserved13,
 			{
-
+				"encoding", 'enCO', 'TEXT',
+				"The encoding to use when interpreting percent escapes. The encoding name is specified with  IANA “charset” name (http://www.iana.org/assignments/character-sets). ",
+				optional,
+				singleItem, notEnumerated, Reserved13
 			},
 
 			"URI Escape",
@@ -48,11 +51,15 @@ resource 'aete' (0, "URI Escape Terminology") {
 			singleItem, notEnumerated, Reserved13,
 			{
 				"additional", 'adCh', 'TEXT',
-				"additional characters to escape",
+				"Additional characters to escape.",
 				optional,
 				singleItem, notEnumerated, Reserved13,
 				"leaving", 'lvCh', 'TEXT',
-				"characters to leave unescaped",
+				"Characters to leave unescaped",
+				optional,
+				singleItem, notEnumerated, Reserved13,
+				"encoding", 'enCO', 'TEXT',
+				"The encoding to use when interpreting percent escapes. The encoding name is specified with  IANA “charset” name (http://www.iana.org/assignments/character-sets). ",
 				optional,
 				singleItem, notEnumerated, Reserved13
 			}

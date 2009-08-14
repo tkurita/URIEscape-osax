@@ -272,6 +272,10 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/ScriptingAdditions";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
 				PRODUCT_NAME = "URI Escape";
 				WRAPPER_EXTENSION = osax;
 				ZERO_LINK = YES;

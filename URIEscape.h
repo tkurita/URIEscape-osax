@@ -6,6 +6,7 @@
 #define kURLescapeEvent 'esUR'
 #define kAdditionalCharParam 'adCh'
 #define kLeavingCharParam 'lvCh'
+#define kEncodingParam 'enCO'
 
 OSErr unPersentEscape(const AppleEvent *ev, AppleEvent *reply, long refcon);
 OSErr persentEscape(const AppleEvent *ev, AppleEvent *reply, long refcon);
