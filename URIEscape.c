@@ -108,8 +108,7 @@ OSErr persentEscape(const AppleEvent *ev, AppleEvent *reply, long refcon)
 	if (originalStr == NULL) goto bail;
 	if (CFStringGetLength(originalStr) == 0) {
 		escapedStr = originalStr;
-	}
-	else {	
+	} else {	
 		err = getStringValue(ev, kAdditionalCharParam, &additionalChar);
 		if ((err != noErr) && (err != errAEDescNotFound)) {
 			fprintf(stderr, "fail to get additional char with error :%d\n",err);
@@ -137,11 +136,16 @@ OSErr persentEscape(const AppleEvent *ev, AppleEvent *reply, long refcon)
 			}
 		}
 		escapedStr = CFURLCreateStringByAddingPercentEscapes(
-			NULL, originalStr, leavingChar, additionalChar, encodingID);
+							NULL, originalStr, leavingChar, additionalChar, encodingID);
+		if (!escapedStr) {
+			putStringToEvent(reply, keyErrorString, 
+							 CFSTR("Fail to encode persent escapes."), kCFStringEncodingUTF8);
+			err = 2002;
+			goto bail;			
+		}
 	}
 	err = putStringToEvent(reply, keyAEResult, escapedStr, kCFStringEncodingUTF8);
 	if (err != noErr) {
-		fprintf(stderr, "fail to setup reply with error :%d\n",err);
 		putStringToEvent(reply, keyErrorString, 
 						 CFSTR("Fail to setup reply."), kCFStringEncodingUTF8);		
 	}
