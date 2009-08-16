@@ -20,7 +20,7 @@ OSErr unPersentEscape(const AppleEvent *ev, AppleEvent *reply, long refcon)
 	CFStringRef encodingName = NULL;
 
 	err = getStringValue(ev, keyDirectObject, &urlStr);
-	if (urlStr == NULL) goto bail;
+	if (!urlStr) goto bail;
 	if (CFStringGetLength(urlStr) == 0) {
 		err = putStringToEvent(reply, keyAEResult, urlStr, kCFStringEncodingUTF8);
 		goto bail;
@@ -52,14 +52,14 @@ OSErr unPersentEscape(const AppleEvent *ev, AppleEvent *reply, long refcon)
 		if (theURL) {
 			theScheme = CFURLCopyScheme(theURL);
 		}
-		if (theScheme != NULL) {
+		if (theScheme) {
 			isFileScheme = CFStringCompare(theScheme, CFSTR("file"), 0);
 			CFRelease(theScheme);
 		
 			if (isFileScheme == kCFCompareEqualTo) {
 				CFStringRef theHost = CFURLCopyHostName(theURL);
 				isLocalFile = kCFCompareEqualTo;
-				if (theHost != NULL) {
+				if (theHost) {
 					isLocalFile = CFStringCompare(theHost, CFSTR("localhost"), 0);
 				}
 			}
@@ -104,6 +104,7 @@ OSErr persentEscape(const AppleEvent *ev, AppleEvent *reply, long refcon)
 	CFStringRef escapedStr = NULL;
 	CFStringRef encodingName = NULL;
 	CFStringEncoding encodingID = kCFStringEncodingUTF8;
+	
 	err = getStringValue(ev, keyDirectObject, &originalStr);
 	if (originalStr == NULL) goto bail;
 	if (CFStringGetLength(originalStr) == 0) {
