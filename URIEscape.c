@@ -31,7 +31,7 @@ OSErr unPersentEscape(const AppleEvent *ev, AppleEvent *reply, long refcon)
 	err = getStringValue(ev, kEncodingParam, &encodingName);
 	if ((err != noErr) && (err != errAEDescNotFound)) {
 		putStringToEvent(reply, keyErrorString, 
-						 CFSTR("Fail to get an encoding name with error."), kCFStringEncodingUTF8);
+						 CFSTR("Failed to get an encoding name with error."), kCFStringEncodingUTF8);
 		goto bail;
 	}
 	if (encodingName) {
@@ -74,7 +74,8 @@ OSErr unPersentEscape(const AppleEvent *ev, AppleEvent *reply, long refcon)
 			err = putStringToEvent(reply, keyAEResult, unescapedURL, kCFStringEncodingUTF8);
 			CFRelease(unescapedURL);
 		} else {
-			putStringToEvent(reply, keyErrorString, CFSTR("Fail to dencode persent escapes."), kCFStringEncodingUTF8);
+			putStringToEvent(reply, keyErrorString, 
+							 CFSTR("Failed to dencode persent escapes."), kCFStringEncodingUTF8);
 			err = 2001;
 		}
 	}
@@ -112,19 +113,20 @@ OSErr persentEscape(const AppleEvent *ev, AppleEvent *reply, long refcon)
 	} else {	
 		err = getStringValue(ev, kAdditionalCharParam, &additionalChar);
 		if ((err != noErr) && (err != errAEDescNotFound)) {
-			fprintf(stderr, "fail to get additional char with error :%d\n",err);
+			putStringToEvent(reply, keyErrorString, 
+							 CFSTR("Failed to get additional characters."), kCFStringEncodingUTF8);
 			goto bail;
 		}
 		err = getStringValue(ev, kLeavingCharParam, &leavingChar);
 		if ((err != noErr) && (err != errAEDescNotFound)) {
 			putStringToEvent(reply, keyErrorString, 
-							 CFSTR("Fail to get leaving characters with error."), kCFStringEncodingUTF8);
+							 CFSTR("Failed to get leaving characters."), kCFStringEncodingUTF8);
 			goto bail;
 		}
 		err = getStringValue(ev, kEncodingParam, &encodingName);
 		if ((err != noErr) && (err != errAEDescNotFound)) {
 			putStringToEvent(reply, keyErrorString, 
-							 CFSTR("Fail to get an encoding name with error."), kCFStringEncodingUTF8);
+							 CFSTR("Failed to get an encoding name."), kCFStringEncodingUTF8);
 			goto bail;
 		}
 		if (encodingName) {
@@ -140,7 +142,7 @@ OSErr persentEscape(const AppleEvent *ev, AppleEvent *reply, long refcon)
 							NULL, originalStr, leavingChar, additionalChar, encodingID);
 		if (!escapedStr) {
 			putStringToEvent(reply, keyErrorString, 
-							 CFSTR("Fail to encode persent escapes."), kCFStringEncodingUTF8);
+							 CFSTR("Failed to encode persent escapes."), kCFStringEncodingUTF8);
 			err = 2002;
 			goto bail;			
 		}
@@ -148,7 +150,7 @@ OSErr persentEscape(const AppleEvent *ev, AppleEvent *reply, long refcon)
 	err = putStringToEvent(reply, keyAEResult, escapedStr, kCFStringEncodingUTF8);
 	if (err != noErr) {
 		putStringToEvent(reply, keyErrorString, 
-						 CFSTR("Fail to setup reply."), kCFStringEncodingUTF8);		
+						 CFSTR("Failed to setup reply."), kCFStringEncodingUTF8);		
 	}
 bail:	
 
