@@ -85,6 +85,7 @@ static void RemoveMyEventHandlers()
 	//printf("end RemoveMyEventHandlers\n");
 }
 
+#if !__LP64__
 int main(int argc, char *argv[]) // for debugging
 {
 	InstallMyEventHandlers();
@@ -92,3 +93,4 @@ int main(int argc, char *argv[]) // for debugging
 	RemoveMyEventHandlers();
 	return 0;
 }
+#endif

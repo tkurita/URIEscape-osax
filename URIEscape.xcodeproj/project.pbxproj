@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 45;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C5A4D79107CA23C00828B7D /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5A4D78107CA23C00828B7D /* CoreServices.framework */; };
 		2C72FD2E095819360091C86F /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C72FD2D095819360091C86F /* Carbon.framework */; };
 		2C72FD31095819440091C86F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C72FD30095819440091C86F /* main.c */; };
 		2C72FE82095836670091C86F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
@@ -26,8 +27,9 @@
 
 /* Begin PBXFileReference section */
 		0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		2C5A4D78107CA23C00828B7D /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
 		2C72FD2D095819360091C86F /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
-		2C72FD30095819440091C86F /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		2C72FD30095819440091C86F /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; lineEnding = 0; path = main.c; sourceTree = "<group>"; };
 		2C72FDBF095836400091C86F /* URI Escape App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "URI Escape App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C72FDC1095836400091C86F /* URI Escape App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "URI Escape App-Info.plist"; sourceTree = "<group>"; };
 		2C72FEAA095838150091C86F /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
@@ -35,7 +37,7 @@
 		2C72FFB109583F760091C86F /* URIEscape.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; path = URIEscape.r; sourceTree = "<group>"; };
 		2C80078509ED23D900E9B3AC /* URIEscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URIEscape.h; sourceTree = "<group>"; };
 		2C80078609ED23D900E9B3AC /* URIEscape.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = URIEscape.c; sourceTree = "<group>"; };
-		2CD2B1C50B96CA9A00DD307C /* AEUtils.c */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.c; path = AEUtils.c; sourceTree = "<group>"; };
+		2CD2B1C50B96CA9A00DD307C /* AEUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; lineEnding = 0; path = AEUtils.c; sourceTree = "<group>"; };
 		2CD2B1C60B96CA9A00DD307C /* AEUtils.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = AEUtils.h; sourceTree = "<group>"; };
 		2CE132DC1032C33C00578ACF /* History.rd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = History.rd; path = ../History.rd; sourceTree = SOURCE_ROOT; };
 		2CF3823710384A8C009F82AE /* test script.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.scpt; path = "test script.scpt"; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */,
 				2C72FD2E095819360091C86F /* Carbon.framework in Frameworks */,
 				2C72FEAB095838150091C86F /* ApplicationServices.framework in Frameworks */,
+				2C5A4D79107CA23C00828B7D /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +87,7 @@
 		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				2C5A4D78107CA23C00828B7D /* CoreServices.framework */,
 				2C72FEAA095838150091C86F /* ApplicationServices.framework */,
 				2C72FD2D095819360091C86F /* Carbon.framework */,
 				0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */,
@@ -177,7 +181,7 @@
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 1DEB911E08733D790010E9CD /* Build configuration list for PBXProject "URIEscape" */;
-			compatibilityVersion = "Xcode 2.4";
+			compatibilityVersion = "Xcode 3.1";
 			hasScannedForEncodings = 1;
 			mainGroup = 089C166AFE841209C02AAC07 /* UnEscapeURL */;
 			projectDirPath = "";
@@ -286,10 +290,6 @@
 		1DEB911C08733D790010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				INFOPLIST_FILE = Info.plist;
@@ -302,24 +302,28 @@
 		1DEB911F08733D790010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_PATH = /Library/ScriptingAdditions;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SDKROOT = macosx10.5;
+				VALID_ARCHS = "x86_64 i386 ppc ppc64 ppc7400 ppc970";
 			};
 			name = Debug;
 		};
 		1DEB912008733D790010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "ppc i386 ppc64 x86_64";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_PATH = /Library/ScriptingAdditions;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SDKROOT = macosx10.5;
+				VALID_ARCHS = "i386 x86_64 ppc ppc64 ppc7400 ppc970";
 			};
 			name = Release;
 		};

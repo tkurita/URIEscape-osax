@@ -7,7 +7,7 @@ extern UInt32 gAdditionReferenceCount;
 
 #pragma mark AppleEvent handlers
 
-OSErr unPersentEscape(const AppleEvent *ev, AppleEvent *reply, long refcon)
+OSErr unPersentEscape(const AppleEvent *ev, AppleEvent *reply, SRefCon refcon)
 {
 	
 	++gAdditionReferenceCount;  // increment the reference count first thing!
@@ -89,7 +89,7 @@ bail:
 	return err;
 }
 
-OSErr persentEscape(const AppleEvent *ev, AppleEvent *reply, long refcon)
+OSErr persentEscape(const AppleEvent *ev, AppleEvent *reply, SRefCon refcon)
 {
 	
 	++gAdditionReferenceCount;  // increment the reference count first thing!

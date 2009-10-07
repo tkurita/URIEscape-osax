@@ -8,5 +8,5 @@
 #define kLeavingCharParam 'lvCh'
 #define kEncodingParam 'enCO'
 
-OSErr unPersentEscape(const AppleEvent *ev, AppleEvent *reply, long refcon);
-OSErr persentEscape(const AppleEvent *ev, AppleEvent *reply, long refcon);
+OSErr unPersentEscape(const AppleEvent *ev, AppleEvent *reply, SRefCon refcon);
+OSErr persentEscape(const AppleEvent *ev, AppleEvent *reply, SRefCon refcon);
