@@ -215,6 +215,7 @@
 				<string>com.apple.ide.PBXToolbarStopButton</string>
 				<string>get-info</string>
 				<string>toggle-editor</string>
+				<string>servicesModulebreakpoints</string>
 				<string>NSToolbarFlexibleSpaceItem</string>
 				<string>com.apple.pbx.toolbar.searchfield</string>
 			</array>
@@ -229,6 +230,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -278,8 +281,6 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>9</integer>
-									<integer>6</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -333,13 +334,13 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>2CA3B3A6103AED970014C60D</string>
+										<string>2C17FC14105135A500391FF8</string>
 										<key>history</key>
 										<array>
 											<string>2CD84B6B1034408100C1CFA3</string>
 											<string>2CD84B6C1034408100C1CFA3</string>
 											<string>2CD84E77103661F100C1CFA3</string>
-											<string>2CF21DE2103A2FD100974C81</string>
+											<string>2C875AAB103B0A0F006091DD</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -368,14 +369,12 @@
 							<string>0pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>URIEscape.c</string>
+								<string>AEUtils.c</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -383,17 +382,18 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>URIEscape.c</string>
+										<string>AEUtils.c</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>2CA3B3A7103AED970014C60D</string>
+										<string>2C17FC16105135A500391FF8</string>
 										<key>history</key>
 										<array>
 											<string>2CD84B6B1034408100C1CFA3</string>
 											<string>2CD84B6C1034408100C1CFA3</string>
 											<string>2CF21DE3103A2FD100974C81</string>
-											<string>2CF21DE6103A2FD100974C81</string>
+											<string>2C875AAC103B0A0F006091DD</string>
+											<string>2C17FC15105135A500391FF8</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -459,9 +459,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>2CA3B3A8103AED970014C60D</string>
+				<string>2C17FC17105135A500391FF8</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>2CA3B3A9103AED970014C60D</string>
+				<string>2C17FC18105135A500391FF8</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>

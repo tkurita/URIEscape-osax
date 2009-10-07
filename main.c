@@ -8,6 +8,7 @@ CFBundleRef		gAdditionBundle;
 // =============================================================================
 // == Entry points.
 
+
 static OSErr InstallMyEventHandlers();
 static void RemoveMyEventHandlers();
 
