@@ -18,6 +18,15 @@
 		2C72FFB509583FB90091C86F /* URIEscape.r in Rez */ = {isa = PBXBuildFile; fileRef = 2C72FFB109583F760091C86F /* URIEscape.r */; };
 		2C80078709ED23D900E9B3AC /* URIEscape.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C80078609ED23D900E9B3AC /* URIEscape.c */; };
 		2C80078809ED23D900E9B3AC /* URIEscape.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C80078609ED23D900E9B3AC /* URIEscape.c */; };
+		2CB1DC651084F79E007CDBA3 /* URIEscape.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 2C72FFAF09583F670091C86F /* URIEscape.sdef */; };
+		2CB1DC681084F79E007CDBA3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C72FD30095819440091C86F /* main.c */; };
+		2CB1DC691084F79E007CDBA3 /* URIEscape.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C80078609ED23D900E9B3AC /* URIEscape.c */; };
+		2CB1DC6A1084F79E007CDBA3 /* AEUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2B1C50B96CA9A00DD307C /* AEUtils.c */; };
+		2CB1DC6C1084F79E007CDBA3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
+		2CB1DC6D1084F79E007CDBA3 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C72FD2D095819360091C86F /* Carbon.framework */; };
+		2CB1DC6E1084F79E007CDBA3 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C72FEAA095838150091C86F /* ApplicationServices.framework */; };
+		2CB1DC6F1084F79E007CDBA3 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5A4D78107CA23C00828B7D /* CoreServices.framework */; };
+		2CB1DC711084F79E007CDBA3 /* URIEscape.r in Rez */ = {isa = PBXBuildFile; fileRef = 2C72FFB109583F760091C86F /* URIEscape.r */; };
 		2CB6DAB709591BA0009A18B4 /* URIEscape.r in Rez */ = {isa = PBXBuildFile; fileRef = 2C72FFB109583F760091C86F /* URIEscape.r */; };
 		2CD2B1C70B96CA9A00DD307C /* AEUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2B1C50B96CA9A00DD307C /* AEUtils.c */; };
 		2CD2B1C80B96CA9A00DD307C /* AEUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2B1C50B96CA9A00DD307C /* AEUtils.c */; };
@@ -37,6 +46,8 @@
 		2C72FFB109583F760091C86F /* URIEscape.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; path = URIEscape.r; sourceTree = "<group>"; };
 		2C80078509ED23D900E9B3AC /* URIEscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URIEscape.h; sourceTree = "<group>"; };
 		2C80078609ED23D900E9B3AC /* URIEscape.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = URIEscape.c; sourceTree = "<group>"; };
+		2CB1DC751084F79E007CDBA3 /* URI Escape.osax */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "URI Escape.osax"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CB1DC761084F79E007CDBA3 /* Info_10_5.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info_10_5.plist; sourceTree = "<group>"; };
 		2CD2B1C50B96CA9A00DD307C /* AEUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; lineEnding = 0; path = AEUtils.c; sourceTree = "<group>"; };
 		2CD2B1C60B96CA9A00DD307C /* AEUtils.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = AEUtils.h; sourceTree = "<group>"; };
 		2CE132DC1032C33C00578ACF /* History.rd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = History.rd; path = ../History.rd; sourceTree = SOURCE_ROOT; };
@@ -53,6 +64,17 @@
 				2C72FE82095836670091C86F /* CoreFoundation.framework in Frameworks */,
 				2C72FE83095836670091C86F /* Carbon.framework in Frameworks */,
 				2C72FEAC095838150091C86F /* ApplicationServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CB1DC6B1084F79E007CDBA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CB1DC6C1084F79E007CDBA3 /* CoreFoundation.framework in Frameworks */,
+				2CB1DC6D1084F79E007CDBA3 /* Carbon.framework in Frameworks */,
+				2CB1DC6E1084F79E007CDBA3 /* ApplicationServices.framework in Frameworks */,
+				2CB1DC6F1084F79E007CDBA3 /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +124,7 @@
 				2C72FDC1095836400091C86F /* URI Escape App-Info.plist */,
 				8D576317048677EA00EA77CD /* Info.plist */,
 				2C72FFB109583F760091C86F /* URIEscape.r */,
+				2CB1DC761084F79E007CDBA3 /* Info_10_5.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -121,6 +144,7 @@
 			children = (
 				8D576316048677EA00EA77CD /* URI Escape.osax */,
 				2C72FDBF095836400091C86F /* URI Escape App.app */,
+				2CB1DC751084F79E007CDBA3 /* URI Escape.osax */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,6 +179,26 @@
 			productReference = 2C72FDBF095836400091C86F /* URI Escape App.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2CB1DC631084F79E007CDBA3 /* URI Escape for 10.5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CB1DC721084F79E007CDBA3 /* Build configuration list for PBXNativeTarget "URI Escape for 10.5" */;
+			buildPhases = (
+				2CB1DC641084F79E007CDBA3 /* Resources */,
+				2CB1DC661084F79E007CDBA3 /* ShellScript */,
+				2CB1DC671084F79E007CDBA3 /* Sources */,
+				2CB1DC6B1084F79E007CDBA3 /* Frameworks */,
+				2CB1DC701084F79E007CDBA3 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "URI Escape for 10.5";
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = UnEscapeURL;
+			productReference = 2CB1DC751084F79E007CDBA3 /* URI Escape.osax */;
+			productType = "com.apple.product-type.bundle";
+		};
 		8D57630D048677EA00EA77CD /* URI Escape */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB911A08733D790010E9CD /* Build configuration list for PBXNativeTarget "URI Escape" */;
@@ -188,6 +232,7 @@
 			projectRoot = "";
 			targets = (
 				8D57630D048677EA00EA77CD /* URI Escape */,
+				2CB1DC631084F79E007CDBA3 /* URI Escape for 10.5 */,
 				2C72FDBE095836400091C86F /* URI Escape App */,
 			);
 		};
@@ -198,6 +243,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CB1DC641084F79E007CDBA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CB1DC651084F79E007CDBA3 /* URIEscape.sdef in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +273,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2CB1DC701084F79E007CDBA3 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CB1DC711084F79E007CDBA3 /* URIEscape.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CB6DAA209591B9A009A18B4 /* Rez */ = {
 			isa = PBXRezBuildPhase;
 			buildActionMask = 2147483647;
@@ -231,6 +292,19 @@
 /* End PBXRezBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2CB1DC661084F79E007CDBA3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/bin/sdp -f a -o \"${SRCROOT}/URIEscape.r\" URIEscape.sdef";
+		};
 		2CD84E421036605100C1CFA3 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -254,6 +328,16 @@
 				2C72FE850958366C0091C86F /* main.c in Sources */,
 				2C80078809ED23D900E9B3AC /* URIEscape.c in Sources */,
 				2CD2B1C80B96CA9A00DD307C /* AEUtils.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CB1DC671084F79E007CDBA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CB1DC681084F79E007CDBA3 /* main.c in Sources */,
+				2CB1DC691084F79E007CDBA3 /* URIEscape.c in Sources */,
+				2CB1DC6A1084F79E007CDBA3 /* AEUtils.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +457,37 @@
 			};
 			name = Release;
 		};
+		2CB1DC731084F79E007CDBA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info_10_5.plist;
+				INSTALL_PATH = "$(HOME)/Library/ScriptingAdditions";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "URI Escape";
+				SYMROOT = build_10_5;
+				WRAPPER_EXTENSION = osax;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		2CB1DC741084F79E007CDBA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = Info_10_5.plist;
+				INSTALL_PATH = /Library/ScriptingAdditions;
+				PRODUCT_NAME = "URI Escape";
+				SYMROOT = build_10_5;
+				WRAPPER_EXTENSION = osax;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -399,6 +514,15 @@
 			buildConfigurations = (
 				2C72FDC3095836410091C86F /* Debug */,
 				2C72FDC4095836410091C86F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CB1DC721084F79E007CDBA3 /* Build configuration list for PBXNativeTarget "URI Escape for 10.5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CB1DC731084F79E007CDBA3 /* Debug */,
+				2CB1DC741084F79E007CDBA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

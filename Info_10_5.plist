@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleGetInfoString</key>
-	<string>1.3 copyright 2005-2009, Tetsuro KURITA</string>
+	<string>1.2.1 copyright 2005-2009, Tetsuro KURITA</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
@@ -21,7 +21,7 @@
 	<key>CFBundleSignature</key>
 	<string>ascr</string>
 	<key>CFBundleVersion</key>
-	<string>1.3</string>
+	<string>1.2.1</string>
 	<key>CSResourcesFileMapped</key>
 	<true/>
 	<key>OSAScriptingDefinition</key>
@@ -30,24 +30,10 @@
 	<dict>
 		<key>Events</key>
 		<dict>
-			<key>ueURueUR</key>
-			<dict>
-				<key>Handler</key>
-				<string>unPersentEscape</string>
-				<key>ThreadSafe</key>
-				<true/>
-				<key>Context</key>
-				<string>Any</string>
-			</dict>
 			<key>ueUResUR</key>
-			<dict>
-				<key>Handler</key>
-				<string>persentEscape</string>
-				<key>ThreadSafe</key>
-				<true/>
-				<key>Context</key>
-				<string>Any</string>
-			</dict>
+			<string>persentEscape</string>
+			<key>ueURueUR</key>
+			<string>unPersentEscape</string>
 		</dict>
 	</dict>
 </dict>
