@@ -123,8 +123,8 @@
 				2C72FFAF09583F670091C86F /* URIEscape.sdef */,
 				2C72FDC1095836400091C86F /* URI Escape App-Info.plist */,
 				8D576317048677EA00EA77CD /* Info.plist */,
-				2C72FFB109583F760091C86F /* URIEscape.r */,
 				2CB1DC761084F79E007CDBA3 /* Info_10_5.plist */,
+				2C72FFB109583F760091C86F /* URIEscape.r */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -358,6 +358,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -366,6 +367,7 @@
 				INSTALL_PATH = "$(HOME)/Library/ScriptingAdditions";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "URI Escape";
+				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = osax;
 				ZERO_LINK = YES;
 			};
@@ -374,11 +376,13 @@
 		1DEB911C08733D790010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CURRENT_PROJECT_VERSION = 2;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = /Library/ScriptingAdditions;
 				PRODUCT_NAME = "URI Escape";
+				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = osax;
 			};
 			name = Release;
@@ -461,6 +465,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -470,6 +475,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "URI Escape";
 				SYMROOT = build_10_5;
+				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = osax;
 				ZERO_LINK = YES;
 			};
@@ -478,12 +484,14 @@
 		2CB1DC741084F79E007CDBA3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CURRENT_PROJECT_VERSION = 2;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				INFOPLIST_FILE = Info_10_5.plist;
 				INSTALL_PATH = /Library/ScriptingAdditions;
 				PRODUCT_NAME = "URI Escape";
 				SYMROOT = build_10_5;
+				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = osax;
 			};
 			name = Release;

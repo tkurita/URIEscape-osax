@@ -6,6 +6,12 @@
 	<string>Japanese</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleVersion</key>
+	<string>2</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>copyright 2005-2009, Tetsuro KURITA</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.2.1</string>
 	<key>CFBundleGetInfoString</key>
 	<string>1.2.1 copyright 2005-2009, Tetsuro KURITA</string>
 	<key>CFBundleIconFile</key>
@@ -20,8 +26,6 @@
 	<string>osax</string>
 	<key>CFBundleSignature</key>
 	<string>ascr</string>
-	<key>CFBundleVersion</key>
-	<string>1.2.1</string>
 	<key>CSResourcesFileMapped</key>
 	<true/>
 	<key>OSAScriptingDefinition</key>
