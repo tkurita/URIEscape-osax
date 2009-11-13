@@ -15,10 +15,10 @@
 		2C72FE850958366C0091C86F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C72FD30095819440091C86F /* main.c */; };
 		2C72FEAB095838150091C86F /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C72FEAA095838150091C86F /* ApplicationServices.framework */; };
 		2C72FEAC095838150091C86F /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C72FEAA095838150091C86F /* ApplicationServices.framework */; };
-		2C72FFB509583FB90091C86F /* URIEscape.r in Rez */ = {isa = PBXBuildFile; fileRef = 2C72FFB109583F760091C86F /* URIEscape.r */; };
+		2C72FFB509583FB90091C86F /* URI Escape.r in Rez */ = {isa = PBXBuildFile; fileRef = 2C72FFB109583F760091C86F /* URI Escape.r */; };
 		2C80078709ED23D900E9B3AC /* URIEscape.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C80078609ED23D900E9B3AC /* URIEscape.c */; };
 		2C80078809ED23D900E9B3AC /* URIEscape.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C80078609ED23D900E9B3AC /* URIEscape.c */; };
-		2CB1DC651084F79E007CDBA3 /* URIEscape.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 2C72FFAF09583F670091C86F /* URIEscape.sdef */; };
+		2CB1DC651084F79E007CDBA3 /* URI Escape.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 2C72FFAF09583F670091C86F /* URI Escape.sdef */; };
 		2CB1DC681084F79E007CDBA3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C72FD30095819440091C86F /* main.c */; };
 		2CB1DC691084F79E007CDBA3 /* URIEscape.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C80078609ED23D900E9B3AC /* URIEscape.c */; };
 		2CB1DC6A1084F79E007CDBA3 /* AEUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2B1C50B96CA9A00DD307C /* AEUtils.c */; };
@@ -26,11 +26,11 @@
 		2CB1DC6D1084F79E007CDBA3 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C72FD2D095819360091C86F /* Carbon.framework */; };
 		2CB1DC6E1084F79E007CDBA3 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C72FEAA095838150091C86F /* ApplicationServices.framework */; };
 		2CB1DC6F1084F79E007CDBA3 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5A4D78107CA23C00828B7D /* CoreServices.framework */; };
-		2CB1DC711084F79E007CDBA3 /* URIEscape.r in Rez */ = {isa = PBXBuildFile; fileRef = 2C72FFB109583F760091C86F /* URIEscape.r */; };
-		2CB6DAB709591BA0009A18B4 /* URIEscape.r in Rez */ = {isa = PBXBuildFile; fileRef = 2C72FFB109583F760091C86F /* URIEscape.r */; };
+		2CB1DC711084F79E007CDBA3 /* URI Escape.r in Rez */ = {isa = PBXBuildFile; fileRef = 2C72FFB109583F760091C86F /* URI Escape.r */; };
+		2CB6DAB709591BA0009A18B4 /* URI Escape.r in Rez */ = {isa = PBXBuildFile; fileRef = 2C72FFB109583F760091C86F /* URI Escape.r */; };
 		2CD2B1C70B96CA9A00DD307C /* AEUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2B1C50B96CA9A00DD307C /* AEUtils.c */; };
 		2CD2B1C80B96CA9A00DD307C /* AEUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2B1C50B96CA9A00DD307C /* AEUtils.c */; };
-		2CD84E441036607300C1CFA3 /* URIEscape.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 2C72FFAF09583F670091C86F /* URIEscape.sdef */; };
+		2CD84E441036607300C1CFA3 /* URI Escape.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 2C72FFAF09583F670091C86F /* URI Escape.sdef */; };
 		8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,8 +42,8 @@
 		2C72FDBF095836400091C86F /* URI Escape App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "URI Escape App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C72FDC1095836400091C86F /* URI Escape App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "URI Escape App-Info.plist"; sourceTree = "<group>"; };
 		2C72FEAA095838150091C86F /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
-		2C72FFAF09583F670091C86F /* URIEscape.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.sdef; path = URIEscape.sdef; sourceTree = "<group>"; };
-		2C72FFB109583F760091C86F /* URIEscape.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; path = URIEscape.r; sourceTree = "<group>"; };
+		2C72FFAF09583F670091C86F /* URI Escape.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.sdef; path = "URI Escape.sdef"; sourceTree = "<group>"; };
+		2C72FFB109583F760091C86F /* URI Escape.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; path = "URI Escape.r"; sourceTree = "<group>"; };
 		2C80078509ED23D900E9B3AC /* URIEscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URIEscape.h; sourceTree = "<group>"; };
 		2C80078609ED23D900E9B3AC /* URIEscape.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = URIEscape.c; sourceTree = "<group>"; };
 		2CB1DC751084F79E007CDBA3 /* URI Escape.osax */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "URI Escape.osax"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,11 +120,11 @@
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2C72FFAF09583F670091C86F /* URIEscape.sdef */,
+				2C72FFAF09583F670091C86F /* URI Escape.sdef */,
 				2C72FDC1095836400091C86F /* URI Escape App-Info.plist */,
 				8D576317048677EA00EA77CD /* Info.plist */,
 				2CB1DC761084F79E007CDBA3 /* Info_10_5.plist */,
-				2C72FFB109583F760091C86F /* URIEscape.r */,
+				2C72FFB109583F760091C86F /* URI Escape.r */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -250,7 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CB1DC651084F79E007CDBA3 /* URIEscape.sdef in Resources */,
+				2CB1DC651084F79E007CDBA3 /* URI Escape.sdef in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CD84E441036607300C1CFA3 /* URIEscape.sdef in Resources */,
+				2CD84E441036607300C1CFA3 /* URI Escape.sdef in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +269,7 @@
 			isa = PBXRezBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C72FFB509583FB90091C86F /* URIEscape.r in Rez */,
+				2C72FFB509583FB90091C86F /* URI Escape.r in Rez */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +277,7 @@
 			isa = PBXRezBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CB1DC711084F79E007CDBA3 /* URIEscape.r in Rez */,
+				2CB1DC711084F79E007CDBA3 /* URI Escape.r in Rez */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +285,7 @@
 			isa = PBXRezBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CB6DAB709591BA0009A18B4 /* URIEscape.r in Rez */,
+				2CB6DAB709591BA0009A18B4 /* URI Escape.r in Rez */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,12 +298,14 @@
 			files = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/URI Escape.sdef",
 			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/URI Escape.r",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/bin/sdp -f a -o \"${SRCROOT}/URIEscape.r\" URIEscape.sdef";
+			shellScript = "/usr/bin/sdp -f a -o \"${SRCROOT}/URI Escape.r\" \"URI Escape.sdef\"";
 		};
 		2CD84E421036605100C1CFA3 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -311,12 +313,14 @@
 			files = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/URI Escape.sdef",
 			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/URI Escape.r",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/bin/sdp -f a -o \"${SRCROOT}/URIEscape.r\" URIEscape.sdef";
+			shellScript = "/usr/bin/sdp -f a -o \"${SRCROOT}/URI Escape.r\" \"URI Escape.sdef\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -358,7 +362,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -376,7 +380,7 @@
 		1DEB911C08733D790010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				INFOPLIST_FILE = Info.plist;
@@ -465,7 +469,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -484,7 +488,7 @@
 		2CB1DC741084F79E007CDBA3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				INFOPLIST_FILE = Info_10_5.plist;
