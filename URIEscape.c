@@ -14,12 +14,11 @@ OSErr unPersentEscape(const AppleEvent *ev, AppleEvent *reply, SRefCon refcon)
 	
 	OSErr err;
 
-	CFStringRef urlStr = NULL;
 	CFURLRef theURL = NULL;
 	CFStringRef theScheme = NULL;
-	CFStringRef encodingName = NULL;
-
-	err = getStringValue(ev, keyDirectObject, &urlStr);
+	
+	CFStringRef urlStr = CFStringCreateWithEvent(ev, keyDirectObject, &err);
+	
 	if (!urlStr) goto bail;
 	if (CFStringGetLength(urlStr) == 0) {
 		err = putStringToEvent(reply, keyAEResult, urlStr, kCFStringEncodingUTF8);
@@ -27,8 +26,7 @@ OSErr unPersentEscape(const AppleEvent *ev, AppleEvent *reply, SRefCon refcon)
 	}
 	
 	CFStringEncoding encodingID = kCFStringEncodingUTF8;
-
-	err = getStringValue(ev, kEncodingParam, &encodingName);
+	CFStringRef encodingName = CFStringCreateWithEvent(ev, kEncodingParam, &err);
 	if ((err != noErr) && (err != errAEDescNotFound)) {
 		putStringToEvent(reply, keyErrorString, 
 						 CFSTR("Failed to get an encoding name with error."), kCFStringEncodingUTF8);
@@ -99,31 +97,30 @@ OSErr persentEscape(const AppleEvent *ev, AppleEvent *reply, SRefCon refcon)
 	showAEDesc(ev);
 #endif
 	
-	CFStringRef originalStr = NULL;
 	CFStringRef additionalChar = NULL;
 	CFStringRef leavingChar = NULL;
 	CFStringRef escapedStr = NULL;
 	CFStringRef encodingName = NULL;
 	CFStringEncoding encodingID = kCFStringEncodingUTF8;
 	
-	err = getStringValue(ev, keyDirectObject, &originalStr);
+	CFStringRef originalStr = CFStringCreateWithEvent(ev, keyDirectObject, &err);
 	if (originalStr == NULL) goto bail;
 	if (CFStringGetLength(originalStr) == 0) {
 		escapedStr = originalStr;
 	} else {	
-		err = getStringValue(ev, kAdditionalCharParam, &additionalChar);
+		additionalChar = CFStringCreateWithEvent(ev, kAdditionalCharParam, &err);
 		if ((err != noErr) && (err != errAEDescNotFound)) {
 			putStringToEvent(reply, keyErrorString, 
 							 CFSTR("Failed to get additional characters."), kCFStringEncodingUTF8);
 			goto bail;
 		}
-		err = getStringValue(ev, kLeavingCharParam, &leavingChar);
+		leavingChar = CFStringCreateWithEvent(ev, kLeavingCharParam, &err);
 		if ((err != noErr) && (err != errAEDescNotFound)) {
 			putStringToEvent(reply, keyErrorString, 
 							 CFSTR("Failed to get leaving characters."), kCFStringEncodingUTF8);
 			goto bail;
 		}
-		err = getStringValue(ev, kEncodingParam, &encodingName);
+		encodingName = CFStringCreateWithEvent(ev, kEncodingParam, &err);
 		if ((err != noErr) && (err != errAEDescNotFound)) {
 			putStringToEvent(reply, keyErrorString, 
 							 CFSTR("Failed to get an encoding name."), kCFStringEncodingUTF8);
