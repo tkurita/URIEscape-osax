@@ -31,10 +31,7 @@
 		2CD2B1C70B96CA9A00DD307C /* AEUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2B1C50B96CA9A00DD307C /* AEUtils.c */; };
 		2CD2B1C80B96CA9A00DD307C /* AEUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2B1C50B96CA9A00DD307C /* AEUtils.c */; };
 		2CD84E441036607300C1CFA3 /* URI Escape.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 2C72FFAF09583F670091C86F /* URI Escape.sdef */; };
-		2CFF37001223CAD7001C2505 /* Info_10_6.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D576317048677EA00EA77CD /* Info_10_6.plist */; };
-		2CFF37011223CADF001C2505 /* Info_10_5.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CB1DC761084F79E007CDBA3 /* Info_10_5.plist */; };
 		2CFF37041223CAF6001C2505 /* URI Escape.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 2C72FFAF09583F670091C86F /* URI Escape.sdef */; };
-		2CFF37051223CAF6001C2505 /* Info_10_6.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D576317048677EA00EA77CD /* Info_10_6.plist */; };
 		2CFF37081223CAF6001C2505 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C72FD30095819440091C86F /* main.c */; };
 		2CFF37091223CAF6001C2505 /* URIEscape.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C80078609ED23D900E9B3AC /* URIEscape.c */; };
 		2CFF370A1223CAF6001C2505 /* AEUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2B1C50B96CA9A00DD307C /* AEUtils.c */; };
@@ -210,10 +207,10 @@
 			buildPhases = (
 				2CB1DC641084F79E007CDBA3 /* Resources */,
 				2CB1DC661084F79E007CDBA3 /* ShellScript */,
+				2C17BCAF122527FC00720F71 /* ShellScript */,
 				2CB1DC671084F79E007CDBA3 /* Sources */,
 				2CB1DC6B1084F79E007CDBA3 /* Frameworks */,
 				2CB1DC701084F79E007CDBA3 /* Rez */,
-				2C99B0BD1225199E0027967C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -298,7 +295,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CB1DC651084F79E007CDBA3 /* URI Escape.sdef in Resources */,
-				2CFF37001223CAD7001C2505 /* Info_10_6.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +303,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CFF37041223CAF6001C2505 /* URI Escape.sdef in Resources */,
-				2CFF37051223CAF6001C2505 /* Info_10_6.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +311,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CD84E441036607300C1CFA3 /* URI Escape.sdef in Resources */,
-				2CFF37011223CADF001C2505 /* Info_10_5.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,18 +352,20 @@
 /* End PBXRezBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2C99B0BD1225199E0027967C /* ShellScript */ = {
+		2C17BCAF122527FC00720F71 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/Info_10_6.plist",
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\"\nplist='Info_10_6'\necho ${EXCUTABLE_NAME}\ndefaults write \"$PWD/$plist\" CFBundleExecutable \"${EXECUTABLE_NAME}\"\ndefaults write \"$PWD/$plist\" CFBundleName \"${PRODUCT_NAME}\"\ndefaults write \"$PWD/$plist\" OSAScriptingDefinition \"${PRODUCT_NAME}.sdef\"";
+			shellScript = "fname=Info_10_6.plist\nplist=`cat \"${SRCROOT}/${fname}\"`\neval echo \\\"$plist\\\" > \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/${fname}\"\n";
+			showEnvVarsInLog = 0;
 		};
 		2CB1DC661084F79E007CDBA3 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -385,6 +381,7 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/bin/sdp -f a -o \"${SRCROOT}/URI Escape.r\" \"URI Escape.sdef\"";
+			showEnvVarsInLog = 0;
 		};
 		2CD84E421036605100C1CFA3 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
