@@ -164,9 +164,9 @@
 			isa = PBXGroup;
 			children = (
 				8D576316048677EA00EA77CD /* URI Escape.osax */,
-				2C72FDBF095836400091C86F /* URI Escape App.app */,
 				2CB1DC751084F79E007CDBA3 /* URI Escape.osax */,
 				2CFF37151223CAF6001C2505 /* URI Escape.osax */,
+				2C72FDBF095836400091C86F /* URI Escape App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -361,10 +361,11 @@
 				"$(SRCROOT)/Info_10_6.plist",
 			);
 			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Info_10_6.plist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "fname=Info_10_6.plist\nplist=`cat \"${SRCROOT}/${fname}\"`\neval echo \\\"$plist\\\" > \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/${fname}\"\n";
+			shellScript = "plist=`cat \"${SCRIPT_INPUT_FILE_0}\"`\neval echo \\\"$plist\\\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2CB1DC661084F79E007CDBA3 /* ShellScript */ = {
