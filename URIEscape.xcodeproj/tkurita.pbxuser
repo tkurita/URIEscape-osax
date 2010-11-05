@@ -115,8 +115,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 310636031;
-			PBXWorkspaceStateSaveDate = 310636031;
+			PBXPerProjectTemplateStateSaveDate = 310662814;
+			PBXWorkspaceStateSaveDate = 310662814;
 		};
 		perUserProjectItems = {
 			2C17BCEC1225325500720F71 = 2C17BCEC1225325500720F71 /* PlistBookmark */;
@@ -124,20 +124,16 @@
 			2C17BCF11225325500720F71 = 2C17BCF11225325500720F71 /* PBXBookmark */;
 			2C17BCF41225325500720F71 = 2C17BCF41225325500720F71 /* PlistBookmark */;
 			2C17BCF61225325500720F71 = 2C17BCF61225325500720F71 /* PlistBookmark */;
-			2C19E6481283EBAC00C14DF1 = 2C19E6481283EBAC00C14DF1 /* PlistBookmark */;
 			2C19E6491283EBAC00C14DF1 = 2C19E6491283EBAC00C14DF1 /* PBXTextBookmark */;
-			2C19E64A1283EBAC00C14DF1 = 2C19E64A1283EBAC00C14DF1 /* PlistBookmark */;
-			2C19E64B1283EBAC00C14DF1 = 2C19E64B1283EBAC00C14DF1 /* PBXTextBookmark */;
-			2C2DBDBD1268AE4100D34363 = 2C2DBDBD1268AE4100D34363 /* PlistBookmark */;
-			2C2DBDBE1268AE4100D34363 = 2C2DBDBE1268AE4100D34363 /* PlistBookmark */;
-			2C2DBDBF1268AE4100D34363 = 2C2DBDBF1268AE4100D34363 /* PlistBookmark */;
-			2C2DBEEF126C1CF900D34363 = 2C2DBEEF126C1CF900D34363 /* PlistBookmark */;
+			2C19E67B1283FA6100C14DF1 = 2C19E67B1283FA6100C14DF1 /* PlistBookmark */;
+			2C19E6801283FA6100C14DF1 = 2C19E6801283FA6100C14DF1 /* PlistBookmark */;
+			2C19E69D1284275700C14DF1 = 2C19E69D1284275700C14DF1 /* PlistBookmark */;
+			2C19E7301284569000C14DF1 = 2C19E7301284569000C14DF1 /* PlistBookmark */;
 			2C5A4AF6107C4D7300828B7D = 2C5A4AF6107C4D7300828B7D /* PBXTextBookmark */;
 			2C5A4AF8107C4D7300828B7D = 2C5A4AF8107C4D7300828B7D /* PBXBookmark */;
 			2C5A4B7E107C763000828B7D = 2C5A4B7E107C763000828B7D /* PlistBookmark */;
 			2C5A4B84107C763000828B7D = 2C5A4B84107C763000828B7D /* PBXTextBookmark */;
 			2C5A4B85107C763000828B7D = 2C5A4B85107C763000828B7D /* PlistBookmark */;
-			2C9DEF271268265900832F6E = 2C9DEF271268265900832F6E /* PBXTextBookmark */;
 			2CB1DC951084FA72007CDBA3 = 2CB1DC951084FA72007CDBA3 /* PlistBookmark */;
 			2CB99CD110AA75A0002C5D32 = 2CB99CD110AA75A0002C5D32 /* PBXTextBookmark */;
 			2CB99D4310AA8684002C5D32 = 2CB99D4310AA8684002C5D32 /* PBXTextBookmark */;
@@ -230,18 +226,6 @@
 		path = "/Users/tkurita/Dev/Projects/URI Escape/trunk/build_10_5/Release/URI Escape.osax/Contents/Info.plist";
 		sourceTree = "<absolute>";
 	};
-	2C19E6481283EBAC00C14DF1 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D576317048677EA00EA77CD /* Info_10_6.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-			CFBundleName,
-		);
-		name = "/Users/tkurita/Dev/Projects/URI Escape/trunk/Info_10_6.plist";
-		rLen = 0;
-		rLoc = 2147483647;
-	};
 	2C19E6491283EBAC00C14DF1 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 2CD2B1C50B96CA9A00DD307C /* AEUtils.c */;
@@ -252,7 +236,19 @@
 		vrLen = 585;
 		vrLoc = 8725;
 	};
-	2C19E64A1283EBAC00C14DF1 /* PlistBookmark */ = {
+	2C19E67B1283FA6100C14DF1 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 2CB1DC761084F79E007CDBA3 /* Info_10_5.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleIdentifier,
+		);
+		name = "/Users/tkurita/Dev/Projects/URI Escape/trunk/Info_10_5.plist";
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	2C19E6801283FA6100C14DF1 /* PlistBookmark */ = {
 		isa = PlistBookmark;
 		fRef = 8D576317048677EA00EA77CD /* Info_10_6.plist */;
 		fallbackIsa = PBXBookmark;
@@ -264,57 +260,25 @@
 		rLen = 0;
 		rLoc = 2147483647;
 	};
-	2C19E64B1283EBAC00C14DF1 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 2CD2B1C50B96CA9A00DD307C /* AEUtils.c */;
-		name = "AEUtils.c: 378";
-		rLen = 0;
-		rLoc = 9097;
-		rType = 0;
-		vrLen = 585;
-		vrLoc = 8725;
-	};
-	2C2DBDBD1268AE4100D34363 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 2CB1DC761084F79E007CDBA3 /* Info_10_5.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = "/Users/tkurita/Dev/Projects/URI Escape/trunk/Info_10_5.plist";
-		rLen = 0;
-		rLoc = 2147483647;
-	};
-	2C2DBDBE1268AE4100D34363 /* PlistBookmark */ = {
+	2C19E69D1284275700C14DF1 /* PlistBookmark */ = {
 		isa = PlistBookmark;
 		fRef = 8D576317048677EA00EA77CD /* Info_10_6.plist */;
 		fallbackIsa = PBXBookmark;
 		isK = 0;
 		kPath = (
-			CFBundleName,
+			CFBundleSignature,
 		);
 		name = "/Users/tkurita/Dev/Projects/URI Escape/trunk/Info_10_6.plist";
-		rLen = 15;
-		rLoc = 0;
-	};
-	2C2DBDBF1268AE4100D34363 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 2CB1DC761084F79E007CDBA3 /* Info_10_5.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = "/Users/tkurita/Dev/Projects/URI Escape/trunk/Info_10_5.plist";
 		rLen = 0;
 		rLoc = 2147483647;
 	};
-	2C2DBEEF126C1CF900D34363 /* PlistBookmark */ = {
+	2C19E7301284569000C14DF1 /* PlistBookmark */ = {
 		isa = PlistBookmark;
 		fRef = 8D576317048677EA00EA77CD /* Info_10_6.plist */;
 		fallbackIsa = PBXBookmark;
 		isK = 0;
 		kPath = (
-			CFBundleName,
+			CFBundleSignature,
 		);
 		name = "/Users/tkurita/Dev/Projects/URI Escape/trunk/Info_10_6.plist";
 		rLen = 0;
@@ -473,16 +437,6 @@
 			sepNavVisRect = "{{0, 562}, {816, 632}}";
 			sepNavWindowFrame = "{{448, 82}, {797, 796}}";
 		};
-	};
-	2C9DEF271268265900832F6E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 2CD2B1C50B96CA9A00DD307C /* AEUtils.c */;
-		name = "AEUtils.c: 378";
-		rLen = 0;
-		rLoc = 9097;
-		rType = 0;
-		vrLen = 585;
-		vrLoc = 8725;
 	};
 	2CB1DC631084F79E007CDBA3 /* URI Escape for 10.5 */ = {
 		activeExec = 0;
