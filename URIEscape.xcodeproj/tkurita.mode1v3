@@ -286,7 +286,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 19}, {256, 498}}</string>
+							<string>{{0, 0}, {256, 498}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -307,7 +307,7 @@
 							<real>234</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>151 289 982 557 0 0 1440 878 </string>
+						<string>393 209 982 557 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -356,7 +356,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {704, 0}}</string>
 								<key>RubberWindowFrame</key>
-								<string>151 289 982 557 0 0 1440 878 </string>
+								<string>393 209 982 557 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -381,15 +381,13 @@
 										<key>history</key>
 										<array>
 											<string>2C5A4B7E107C763000828B7D</string>
-											<string>2CB99CD110AA75A0002C5D32</string>
 											<string>2CFF36CF1223CA4F001C2505</string>
 											<string>2CFF37561223CDFE001C2505</string>
 											<string>2C17BCEC1225325500720F71</string>
 											<string>2C17BCEE1225325500720F71</string>
 											<string>2C17BCF11225325500720F71</string>
 											<string>2C19E6491283EBAC00C14DF1</string>
-											<string>2C19E67B1283FA6100C14DF1</string>
-											<string>2C19E69D1284275700C14DF1</string>
+											<string>2CDD295312AF0825000D6FBD</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -417,7 +415,7 @@
 								<key>Frame</key>
 								<string>{{0, 5}, {704, 385}}</string>
 								<key>RubberWindowFrame</key>
-								<string>151 289 982 557 0 0 1440 878 </string>
+								<string>393 209 982 557 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -437,7 +435,7 @@
 								<key>Frame</key>
 								<string>{{0, 395}, {704, 121}}</string>
 								<key>RubberWindowFrame</key>
-								<string>151 289 982 557 0 0 1440 878 </string>
+								<string>393 209 982 557 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -462,9 +460,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>2C19E745128456A900C14DF1</string>
+				<string>2CDD297312AF0A21000D6FBD</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>2C19E746128456A900C14DF1</string>
+				<string>2CDD297412AF0A21000D6FBD</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
@@ -601,7 +599,7 @@
 		<string>/Users/tkurita/Dev/Projects/URI Escape/trunk/URIEscape.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>151 289 982 557 0 0 1440 878 </string>
+	<string>393 209 982 557 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -680,7 +678,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>2CD84AE01032EFA700C1CFA3</string>
-				<string>2C19E747128456A900C14DF1</string>
+				<string>2CDD297512AF0A21000D6FBD</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
