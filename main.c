@@ -39,8 +39,9 @@ struct AEEventHandlerInfo {
 typedef struct AEEventHandlerInfo AEEventHandlerInfo;
 
 static const AEEventHandlerInfo gEventInfo[] = {
-	{ kURLunescapeSuite, kURLunescapeEvent, unPersentEscape },
-	{ kURLunescapeSuite, kURLescapeEvent, persentEscape }
+	{ kURLEscapeSuite, kURLunescapeEvent, unPersentEscape },
+	{ kURLEscapeSuite, kURLescapeEvent, persentEscape },
+	{ kURLEscapeSuite, kURLescapeEvent, URIEscapeVersionHandler}
 	// Add more suite/event/handler triplets here if you define more than one command.
 };
 
