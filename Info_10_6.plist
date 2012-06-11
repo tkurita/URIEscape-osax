@@ -9,11 +9,11 @@
 	<key>CFBundleVersion</key>
 	<string>8</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>for 10.6 copyright 2005-2010, Tetsuro KURITA</string>
+	<string>for 10.6 copyright 2005-2012, Tetsuro KURITA</string>
 	<key>CFBundleShortVersionString</key>
-	<string>${PRODUCT_VERSION}</string>
+	<string>${URIEscape_VERSION}</string>
 	<key>CFBundleGetInfoString</key>
-	<string>${PRODUCT_VERSION} for 10.6 copyright 2005-2010, Tetsuro KURITA</string>
+	<string>${URIEscape_VERSION} for 10.6 copyright 2005-2012, Tetsuro KURITA</string>
 	<key>CFBundleIdentifier</key>
 	<string>Scriptfactory.osax.URIEscape</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -45,6 +45,15 @@
 			<dict>
 				<key>Handler</key>
 				<string>persentEscape</string>
+				<key>ThreadSafe</key>
+				<true/>
+				<key>Context</key>
+				<string>Any</string>
+			</dict>
+			<key>ueURVers</key>
+			<dict>
+				<key>Handler</key>
+				<string>URIEscapeVersionHandler</string>
 				<key>ThreadSafe</key>
 				<true/>
 				<key>Context</key>

@@ -248,6 +248,7 @@
 			buildPhases = (
 				8D57630F048677EA00EA77CD /* Resources */,
 				2CD84E421036605100C1CFA3 /* ShellScript */,
+				2CAE91D2158660EA0053FFF8 /* ShellScript */,
 				8D576311048677EA00EA77CD /* Sources */,
 				8D576313048677EA00EA77CD /* Frameworks */,
 				2CB6DAA209591B9A009A18B4 /* Rez */,
@@ -269,7 +270,14 @@
 			isa = PBXProject;
 			buildConfigurationList = 1DEB911E08733D790010E9CD /* Build configuration list for PBXProject "URIEscape" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 089C166AFE841209C02AAC07 /* UnEscapeURL */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -366,6 +374,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "plist=`cat \"${SCRIPT_INPUT_FILE_0}\"`\neval echo \\\"$plist\\\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CAE91D2158660EA0053FFF8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "plist=`cat \"${SRCROOT}/Info_10_6.plist\"`\neval echo \\\"$plist\\\" > \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Info_10_6.plist\"\n\nplist=`cat \"${SRCROOT}/Info_10_5.plist\"`\neval echo \\\"$plist\\\" > \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Info_10_5.plist\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2CB1DC661084F79E007CDBA3 /* ShellScript */ = {
@@ -482,12 +504,23 @@
 		1DEB911C08733D790010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					ppc64,
+					ppc,
+					x86_64,
+					i386,
+				);
 				CURRENT_PROJECT_VERSION = 8;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = 4.2;
+				"GCC_VERSION[sdk=macosx10.4][arch=*]" = 4.0;
+				"GCC_VERSION[sdk=macosx10.5][arch=*]" = "";
 				INFOPLIST_FILE = Info_10_6.plist;
 				INSTALL_PATH = /Library/ScriptingAdditions;
 				PRODUCT_NAME = "URI Escape";
+				"SDKROOT[arch=i386]" = macosx10.4;
+				"SDKROOT[arch=ppc]" = macosx10.4;
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = osax;
 			};
@@ -501,8 +534,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_PATH = /Library/ScriptingAdditions;
+				OTHER_CFLAGS = "-DURIEscape_VERSION=${URIEscape_VERSION}";
 				PREBINDING = NO;
 				SDKROOT = macosx10.5;
+				URIEscape_VERSION = 1.4;
 				VALID_ARCHS = "x86_64 i386 ppc ppc64 ppc7400 ppc970";
 			};
 			name = Debug;
@@ -515,8 +550,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_PATH = /Library/ScriptingAdditions;
+				OTHER_CFLAGS = "-DURIEscape_VERSION=${URIEscape_VERSION}";
 				PREBINDING = NO;
 				SDKROOT = macosx10.5;
+				URIEscape_VERSION = 1.4;
 				VALID_ARCHS = "i386 x86_64 ppc ppc64 ppc7400 ppc970";
 			};
 			name = Release;
@@ -580,7 +617,6 @@
 				INSTALL_PATH = "$(HOME)/Library/ScriptingAdditions";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "URI Escape";
-				PRODUCT_VERSION = 1.3.3;
 				SYMROOT = build_10_5;
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = osax;
@@ -591,14 +627,20 @@
 		2CB1DC741084F79E007CDBA3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					ppc64,
+					ppc,
+					"$(ARCHS_STANDARD_32_64_BIT)",
+				);
 				CURRENT_PROJECT_VERSION = 8;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = 4.2;
+				"GCC_VERSION[sdk=macosx10.4]" = 4.0;
 				INFOPLIST_FILE = Info_10_5.plist;
 				INSTALL_PATH = /Library/ScriptingAdditions;
 				"MACOSX_DEPLOYMENT_TARGET[sdk=macosx10.4]" = 10.4;
 				PRODUCT_NAME = "URI Escape";
-				PRODUCT_VERSION = 1.3.3;
 				"SDKROOT[arch=i386]" = macosx10.4;
 				"SDKROOT[arch=ppc]" = macosx10.4;
 				SYMROOT = build_10_5;

@@ -2,17 +2,20 @@
 <!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
 <dictionary title="URI Escape Terminology">
 	<suite name="URI Escape Suite" code="ueUR" description="Unescape/Adding percent escape sequences in URL. ">
-		<command name="URI Unescape" code="ueURueUR" description="Unescape percent escape sequences in URL. If the protocoal of the URL is file, return POSIX path in local file system. ">
-			<direct-parameter description="URL" type="text"/>
-			<parameter name="encoding" code="enCO" description="The encoding to use when interpreting percent escapes. The encoding name is specified with  IANA “charset” name (http://www.iana.org/assignments/character-sets). " type="text" optional="yes"/>
-			<result description="Unescaped URL String or POSIX path." type="text"/>
-		</command>
-		<command name="URI Escape" code="ueUResUR" description="add percent escapes to string">
+		<command name="URI Escape" code="ueUResUR" description="Add percent escapes to string">
 			<direct-parameter description="text to add persent escapes" type="text"/>
 			<parameter name="additional" code="adCh" description="Additional characters to escape." type="text" optional="yes"/>
 			<parameter name="leaving" code="lvCh" description="Characters to leave unescaped" type="text" optional="yes"/>
 			<parameter name="encoding" code="enCO" description="The encoding to use when interpreting percent escapes. The encoding name is specified with  IANA “charset” name (http://www.iana.org/assignments/character-sets). " type="text" optional="yes"/>
 			<result type="text"/>
+		</command>
+		<command name="URI Unescape" code="ueURueUR" description="Unescape percent escape sequences in URL. If the protocoal of the URL is file, return POSIX path in local file system. ">
+			<direct-parameter description="URL" type="text"/>
+			<parameter name="encoding" code="enCO" description="The encoding to use when interpreting percent escapes. The encoding name is specified with  IANA “charset” name (http://www.iana.org/assignments/character-sets). " type="text" optional="yes"/>
+			<result description="Unescaped URL String or POSIX path." type="text"/>
+		</command>
+		<command name="URI Escape version" code="ueURVers" description="Get version number of URI Escape suite.">
+			<result description="version number" type="text"/>
 		</command>
 	</suite>
 </dictionary>

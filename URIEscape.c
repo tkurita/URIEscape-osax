@@ -7,6 +7,21 @@ extern UInt32 gAdditionReferenceCount;
 
 #pragma mark AppleEvent handlers
 
+#define STR(s) _STR(s)
+#define _STR(s) #s 
+
+OSErr URIEscapeVersionHandler(const AppleEvent *ev, AppleEvent *reply, SRefCon refcon)
+{
+#if useLog
+	fprintf(stderr, "start URIEscapeVersionHandler\n");
+#endif			
+	gAdditionReferenceCount++;
+	OSErr err;
+	err = putStringToEvent(reply, keyAEResult, CFSTR(STR(URIEscape_VERSION)), kCFStringEncodingUnicode);
+	gAdditionReferenceCount--;
+	return err;
+}
+
 OSErr unPersentEscape(const AppleEvent *ev, AppleEvent *reply, SRefCon refcon)
 {
 	

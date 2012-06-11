@@ -22,25 +22,8 @@ resource 'aete' (0, "URI Escape Terminology") {
 		{
 			/* Events */
 
-			"URI Unescape",
-			"Unescape percent escape sequences in URL. If the protocoal of the URL is file, return POSIX path in local file system. ",
-			'ueUR', 'ueUR',
-			'TEXT',
-			"Unescaped URL String or POSIX path.",
-			replyRequired, singleItem, notEnumerated, Reserved13,
-			'TEXT',
-			"URL",
-			directParamRequired,
-			singleItem, notEnumerated, Reserved13,
-			{
-				"encoding", 'enCO', 'TEXT',
-				"The encoding to use when interpreting percent escapes. The encoding name is specified with  IANA “charset” name (http://www.iana.org/assignments/character-sets). ",
-				optional,
-				singleItem, notEnumerated, Reserved13
-			},
-
 			"URI Escape",
-			"add percent escapes to string",
+			"Add percent escapes to string",
 			'ueUR', 'esUR',
 			'TEXT',
 			"",
@@ -62,6 +45,34 @@ resource 'aete' (0, "URI Escape Terminology") {
 				"The encoding to use when interpreting percent escapes. The encoding name is specified with  IANA “charset” name (http://www.iana.org/assignments/character-sets). ",
 				optional,
 				singleItem, notEnumerated, Reserved13
+			},
+
+			"URI Unescape",
+			"Unescape percent escape sequences in URL. If the protocoal of the URL is file, return POSIX path in local file system. ",
+			'ueUR', 'ueUR',
+			'TEXT',
+			"Unescaped URL String or POSIX path.",
+			replyRequired, singleItem, notEnumerated, Reserved13,
+			'TEXT',
+			"URL",
+			directParamRequired,
+			singleItem, notEnumerated, Reserved13,
+			{
+				"encoding", 'enCO', 'TEXT',
+				"The encoding to use when interpreting percent escapes. The encoding name is specified with  IANA “charset” name (http://www.iana.org/assignments/character-sets). ",
+				optional,
+				singleItem, notEnumerated, Reserved13
+			},
+
+			"URI Escape version",
+			"Get version number of URI Escape suite.",
+			'ueUR', 'Vers',
+			'TEXT',
+			"version number",
+			replyRequired, singleItem, notEnumerated, Reserved13,
+			dp_none__,
+			{
+
 			}
 		},
 		{
