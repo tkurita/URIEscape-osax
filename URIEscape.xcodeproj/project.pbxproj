@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -269,7 +269,7 @@
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 1DEB911E08733D790010E9CD /* Build configuration list for PBXProject "URIEscape" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -529,40 +529,28 @@
 		1DEB911F08733D790010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_PATH = /Library/ScriptingAdditions;
 				OTHER_CFLAGS = "-DURIEscape_VERSION=${URIEscape_VERSION}";
-				PREBINDING = NO;
-				SDKROOT = macosx10.5;
-				URIEscape_VERSION = 1.4.1;
-				VALID_ARCHS = "x86_64 i386 ppc ppc64 ppc7400 ppc970";
+				SDKROOT = macosx10.8;
+				URIEscape_VERSION = 1.4.2b;
 			};
 			name = Debug;
 		};
 		1DEB912008733D790010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc64,
-					ppc,
-					"$(ARCHS_STANDARD_32_64_BIT)",
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_ENABLE_OBJC_GC = supported;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_PATH = /Library/ScriptingAdditions;
-				"MACOSX_DEPLOYMENT_TARGET[sdk=macosx10.4][arch=*]" = 10.4;
 				OTHER_CFLAGS = "-DURIEscape_VERSION=${URIEscape_VERSION}";
-				PREBINDING = NO;
-				SDKROOT = macosx10.5;
-				"SDKROOT[arch=i386]" = macosx10.4;
-				"SDKROOT[arch=ppc]" = macosx10.4;
-				URIEscape_VERSION = 1.4.1;
-				VALID_ARCHS = "i386 x86_64 ppc ppc64 ppc7400 ppc970";
+				SDKROOT = macosx10.8;
+				URIEscape_VERSION = 1.4.2b;
 			};
 			name = Release;
 		};
